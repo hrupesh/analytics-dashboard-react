@@ -51,7 +51,8 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import Icon from "@duik/icon";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 var ps;
 
@@ -129,7 +130,7 @@ class Sidebar extends React.Component {
           {/* Brand */}
           {logo ? (
             <NavbarBrand className="pt-0" {...navbarBrandProps}>
-              <Icon>building</Icon>
+              <FontAwesomeIcon icon={["fab", "github"]} />
             </NavbarBrand>
           ) : null}
           {/* User */}
