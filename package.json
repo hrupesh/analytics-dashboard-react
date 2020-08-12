@@ -43,6 +43,7 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "@duik/icon": "^0.6.0",
     "@duik/it": "^0.6.0",
     "@fortawesome/fontawesome-free": "5.12.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
