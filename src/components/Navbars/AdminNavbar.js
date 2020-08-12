@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // reactstrap components
 import {
@@ -33,9 +33,25 @@ import {
   Nav,
   Container,
   Media,
+  Dropdown,
 } from "reactstrap";
 
 class AdminNavbar extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      dropdownOpen: false,
+    };
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle(event) {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen,
+    });
+  }
+
   render() {
     return (
       <>
@@ -65,7 +81,7 @@ class AdminNavbar extends React.Component {
               </FormGroup>
             </Form> */}
             <Nav className="align-items-center d-none d-md-flex" navbar>
-              <UncontrolledDropdown nav>
+              {/* <UncontrolledDropdown nav>
                 <DropdownToggle className="pr-0" nav>
                   <Media className="align-items-center">
                     <span className="avatar avatar-sm rounded-circle">
@@ -110,7 +126,20 @@ class AdminNavbar extends React.Component {
                     <span>Logout</span>
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
+              <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                <DropdownToggle
+                  onChange={(e) => alert(e.target.value)}
+                  defaultValue="ENG"
+                >
+                  Dropdown
+                </DropdownToggle>
+                <DropdownMenu >
+                  <DropdownItem defaultValue="ENG">ENG</DropdownItem>
+                  <DropdownItem defaultValue="HIN">HIN</DropdownItem>
+                  <DropdownItem defaultValue="ESP">ESP</DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
             </Nav>
           </Container>
         </Navbar>

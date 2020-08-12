@@ -103,6 +103,10 @@ abbr[data-original-title] {
   cursor: help;
   border-bottom: 0; }
 
+  .mw-8{
+    min-width: 8rem;
+  }
+
 address {
   margin-bottom: 1rem;
   font-style: normal;
