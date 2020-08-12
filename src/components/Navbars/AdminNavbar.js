@@ -36,6 +36,8 @@ import {
   // Dropdown,
 } from "reactstrap";
 import { Dropdown, DropdownItem, DropdownMenu, Icon } from "@duik/it";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 class AdminNavbar extends React.Component {
   render() {
@@ -55,9 +57,12 @@ class AdminNavbar extends React.Component {
               {this.props.brandText}
             </Link>
 
-            <Nav className="align-items-center d-none d-md-flex" navbar>
+            <Nav className="align-items-center d-none d-md-flex " navbar>
               <Dropdown buttonText={<strong>Click me</strong>}>
-                <DropdownItem>ENG</DropdownItem>
+                <DropdownItem>
+                  <FontAwesomeIcon icon={faCoffee} />
+                  ENG
+                </DropdownItem>
                 <DropdownItem>ESP</DropdownItem>
                 <DropdownItem>HIN</DropdownItem>
               </Dropdown>
