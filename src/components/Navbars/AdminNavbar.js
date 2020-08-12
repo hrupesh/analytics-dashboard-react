@@ -38,6 +38,7 @@ import {
 import { Dropdown, DropdownItem, DropdownMenu, Icon } from "@duik/it";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import Flags from "country-flag-icons/react/3x2";
 
 class AdminNavbar extends React.Component {
   render() {
@@ -60,11 +61,17 @@ class AdminNavbar extends React.Component {
             <Nav className="align-items-center d-none d-md-flex " navbar>
               <Dropdown buttonText={<strong>Click me</strong>}>
                 <DropdownItem>
-                  <FontAwesomeIcon icon={faCoffee} />
+                <Flags.EG title="English" style={{ width: 20, height: 20 }} />
                   ENG
                 </DropdownItem>
-                <DropdownItem>ESP</DropdownItem>
-                <DropdownItem>HIN</DropdownItem>
+                <DropdownItem>
+                  <Flags.ES title="Spanish" style={{ width: 20, height: 20 }} />
+                  ESP
+                </DropdownItem>
+                <DropdownItem>
+                  <Flags.IN title="Hindi" style={{ width: 20, height: 20 }} />
+                  HIN
+                </DropdownItem>
               </Dropdown>
             </Nav>
           </Container>
