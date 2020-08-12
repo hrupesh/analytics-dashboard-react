@@ -24,10 +24,11 @@ import {
   // UncontrolledDropdown,
   // DropdownToggle,
   // Form,
-  // FormGroup,
+  FormGroup,
   // InputGroupAddon,
   // InputGroupText,
-  // Input,
+  Input,
+  Label,
   // InputGroup,
   Navbar,
   Nav,
@@ -35,12 +36,24 @@ import {
   // Media,
   // Dropdown,
 } from "reactstrap";
+import "../../assets/css/argon-dashboard-react.css";
 import { Dropdown, DropdownItem, DropdownMenu, Icon } from "@duik/it";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import Flags from "country-flag-icons/react/3x2";
+import ReactFlagsSelect from "react-flags-select";
+
+import "react-flags-select/css/react-flags-select.css";
 
 class AdminNavbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: "ENGLISH",
+      FLAG_CODE: "GB",
+    };
+  }
+
   render() {
     return (
       <>
@@ -59,20 +72,28 @@ class AdminNavbar extends React.Component {
             </Link>
 
             <Nav className="align-items-center d-none d-md-flex " navbar>
-              <Dropdown buttonText={<strong>Click me</strong>}>
+              <ReactFlagsSelect
+                countries={["GB", "ES", "IN"]}
+                placeholder="Select Language"
+                className="menu-flags"
+              />
+              {/* <Dropdown
+                closeOnOptionClick={true}
+                buttonText={this.state.FLAG_CODE + " " + this.state.language}
+              >
                 <DropdownItem>
-                <Flags.EG title="English" style={{ width: 20, height: 20 }} />
+                  <Flags.GB title="English" style={{ width: 20, height: 20 }} />
                   ENG
-                </DropdownItem>
-                <DropdownItem>
-                  <Flags.ES title="Spanish" style={{ width: 20, height: 20 }} />
-                  ESP
                 </DropdownItem>
                 <DropdownItem>
                   <Flags.IN title="Hindi" style={{ width: 20, height: 20 }} />
                   HIN
                 </DropdownItem>
-              </Dropdown>
+                <DropdownItem>
+                  <Flags.ES title="Spanish" style={{ width: 20, height: 20 }} />
+                  ESP
+                </DropdownItem>
+              </Dropdown> */}
             </Nav>
           </Container>
         </Navbar>
