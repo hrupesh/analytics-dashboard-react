@@ -10340,6 +10340,7 @@ a.btn-icon-only {
     top: 0;
     width: 100%;
     z-index: 1;
+    border-bottom: 1px solid #eaedf3;
     background-color: transparent;
     padding-left: 0 !important;
     padding-right: 0 !important; }
