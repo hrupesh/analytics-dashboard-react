@@ -74,8 +74,7 @@ class AdminNavbar extends React.Component {
             <Nav className="align-items-center d-none d-md-flex " navbar>
               <ReactFlagsSelect
                 countries={["GB", "ES", "IN"]}
-                placeholder="Select Language"
-                className="menu-flags"
+                defaultCountry="GB"
               />
               {/* <Dropdown
                 closeOnOptionClick={true}
