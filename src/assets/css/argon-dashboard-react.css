@@ -3080,6 +3080,7 @@ input[type="button"].btn-block {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  border-bottom: 1px solid #eaedf3;
   justify-content: space-between;
   padding: 1rem 1rem; }
   .navbar > .container,
@@ -10340,7 +10341,7 @@ a.btn-icon-only {
     top: 0;
     width: 100%;
     z-index: 1;
-    border-bottom: 1px solid #eaedf3;
+    
     background-color: transparent;
     padding-left: 0 !important;
     padding-right: 0 !important; }
@@ -11245,8 +11246,15 @@ textarea[resize="horizontal"] {
     .navbar-horizontal .navbar-transparent .navbar-brand:hover, .navbar-horizontal .navbar-transparent .navbar-brand:focus {
       color: rgba(255, 255, 255, 0.95); } }
 
+.border-bottom-1{
+  border-bottom: 1px solid #eaedf3;
+}
+
 .navbar-vertical {
-  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15) !important; }
+  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15) !important; 
+  border-right: 1px solid #eaedf3;
+  padding: 0 !important;
+}
   .navbar-vertical .navbar {
     border-width: 0 0 1px 0;
     border-style: solid; }

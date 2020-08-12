@@ -33,6 +33,7 @@ import {
   Navbar,
   Nav,
   Container,
+  NavbarBrand,
   // Media,
   // Dropdown,
 } from "reactstrap";
@@ -58,14 +59,14 @@ class AdminNavbar extends React.Component {
     return (
       <>
         <Navbar
-          className="navbar-top   navbar-dark"
+          className="navbar-top navbar-dark"
           color="white"
           expand="md"
           id="navbar-main"
         >
-          <Container fluid>
+          <Container >
             <Link
-              className="h4 mb-0 text-dark text-uppercase d-none d-lg-inline-block"
+              className="h4 mb-0 text-dark  d-none d-lg-inline-block"
               to="/"
             >
               {this.props.brandText}
@@ -74,7 +75,7 @@ class AdminNavbar extends React.Component {
             <Nav className="align-items-center d-none d-md-flex " navbar>
               <ReactFlagsSelect
                 countries={["CZ", "IN", "NO"]}
-                customLabels={{"CZ": "CZ","IN": "IN","NO": "NO"}}
+                customLabels={{ CZ: "CZ", IN: "IN", NO: "NO" }}
                 defaultCountry="CZ"
               />
               {/* <Dropdown
