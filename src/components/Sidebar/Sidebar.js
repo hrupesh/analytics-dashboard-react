@@ -84,17 +84,20 @@ class Sidebar extends React.Component {
   createLinks = (routes) => {
     return routes.map((prop, key) => {
       return (
-        <NavItem key={key}>
-          <NavLink
-            to={prop.layout + prop.path}
-            tag={NavLinkRRD}
-            onClick={this.closeCollapse}
-            activeClassName="active"
-          >
-            <i className={prop.icon} />
-            {prop.name}
-          </NavLink>
-        </NavItem>
+        <>
+          <NavItem key={key}>
+            <NavLink
+              to={prop.layout + prop.path}
+              tag={NavLinkRRD}
+              onClick={this.closeCollapse}
+              activeClassName="active"
+            >
+              <i className={prop.icon} />
+              {prop.name}
+            </NavLink>
+          </NavItem>
+          <hr />
+        </>
       );
     });
   };
@@ -134,9 +137,7 @@ class Sidebar extends React.Component {
             </NavbarBrand>
           ) : null}
           {/* User */}
-          <Nav className="align-items-center d-md-none">
-            
-          </Nav>
+          <Nav className="align-items-center d-md-none"></Nav>
           {/* Collapse */}
           <Collapse navbar isOpen={this.state.collapseOpen}>
             {/* Collapse header */}
@@ -167,10 +168,9 @@ class Sidebar extends React.Component {
                 </Col>
               </Row>
             </div>
-            
+
             {/* Navigation */}
             <Nav navbar>{this.createLinks(routes)}</Nav>
-           
           </Collapse>
         </Container>
       </Navbar>

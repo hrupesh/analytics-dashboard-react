@@ -33,28 +33,28 @@ var routes = [
   },
   {
     path: "/icons",
-    name: "Icons",
+    name: "Calendar",
     icon: "ni ni-planet text-blue",
     component: Icons,
     layout: "/admin"
   },
   {
     path: "/maps",
-    name: "Maps",
+    name: "Inbox",
     icon: "ni ni-pin-3 text-orange",
     component: Maps,
     layout: "/admin"
   },
   {
     path: "/user-profile",
-    name: "User Profile",
+    name: "Invoicing",
     icon: "ni ni-single-02 text-yellow",
     component: Profile,
     layout: "/admin"
   },
   {
     path: "/tables",
-    name: "Tables",
+    name: "Lab / Experimental",
     icon: "ni ni-bullet-list-67 text-red",
     component: Tables,
     layout: "/admin"
