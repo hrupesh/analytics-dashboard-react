@@ -59,12 +59,12 @@ class AdminNavbar extends React.Component {
     return (
       <>
         <Navbar
-          className="navbar navbar-dark"
+          className="navbar navbar-top navbar-dark"
           color="white"
           expand="md"
           id="navbar-main"
         >
-          <Container >
+          <Container>
             <Link
               className="h4 mb-0 text-dark  d-none d-lg-inline-block"
               to="/"

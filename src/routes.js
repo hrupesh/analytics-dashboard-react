@@ -27,33 +27,33 @@ var routes = [
   {
     path: "/index",
     name: "Dashboard",
-    icon: "ni ni-tv-2 text-primary",
+    icon: "fas fa-th-large text-primary",
     component: Index,
     layout: "/admin"
   },
   {
-    path: "/icons",
+    path: "/calendar",
     name: "Calendar",
-    icon: "ni ni-planet text-blue",
+    icon: "far fa-calendar-minus",
     component: Icons,
     layout: "/admin"
   },
   {
-    path: "/maps",
+    path: "/inbox",
     name: "Inbox",
-    icon: "ni ni-pin-3 text-orange",
+    icon: "far fa-inbox",
     component: Maps,
     layout: "/admin"
   },
   {
-    path: "/user-profile",
+    path: "/invoicing",
     name: "Invoicing",
     icon: "ni ni-single-02 text-yellow",
     component: Profile,
     layout: "/admin"
   },
   {
-    path: "/tables",
+    path: "/lab",
     name: "Lab / Experimental",
     icon: "ni ni-bullet-list-67 text-red",
     component: Tables,
