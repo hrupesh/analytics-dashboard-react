@@ -184,20 +184,19 @@ class Sidebar extends React.Component {
               <Nav navbar>{this.createLinks(routes)}</Nav>
 
               <div class="nav-section">
-                {" "}
-                <span class="nav-section-title">Recently viewed</span>{" "}
+                <span class="nav-section-title">Recently viewed</span>
                 <a class="nav-link">
                   <span class="nav-link-text">Overall Performance</span>
                   <span class="nav-link-right-el">→</span>
-                </a>{" "}
+                </a>
                 <a class="nav-link">
                   <span class="nav-link-text">Invoice #845</span>
                   <span class="nav-link-right-el">→</span>
-                </a>{" "}
+                </a>
                 <a class="nav-link">
                   <span class="nav-link-text">Customer: Minerva Viewer</span>
                   <span class="nav-link-right-el">→</span>
-                </a>{" "}
+                </a>
               </div>
             </Collapse>
           </div>
