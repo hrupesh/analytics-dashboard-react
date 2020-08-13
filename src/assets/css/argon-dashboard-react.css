@@ -17198,7 +17198,7 @@ textarea[resize="horizontal"] {
     max-width: 250px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 
   .navbar-vertical.navbar-expand-md>[class*="container"] {
@@ -21194,6 +21194,7 @@ button:focus,
 
 .avatarContainer {
   padding: 30px;
+  padding-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21203,4 +21204,28 @@ button:focus,
   height: 100px;
   width: 100px;
   border-radius: 50%;
+}
+
+.image-wrapper {
+  padding: 0.75rem 0;
+}
+
+.avatar-Name {
+  color: #3e3f42;
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.avatar-Des {
+  color: #9ea0a5;
+  font-size: .875rem;
+}
+
+.scroll-view {
+  min-height: 1px;
+  max-height: 600px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow-y: auto;
 }

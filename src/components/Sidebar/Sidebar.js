@@ -138,45 +138,69 @@ class Sidebar extends React.Component {
           {/* User */}
           <Nav className="align-items-center d-md-none"></Nav>
           {/* Collapse */}
-          <Collapse navbar isOpen={this.state.collapseOpen}>
-            {/* Collapse header */}
-            <div className="navbar-collapse-header d-md-none">
-              <Row>
-                {logo ? (
-                  <Col className="collapse-brand" xs="6">
-                    {logo.innerLink ? (
-                      <Link to={logo.innerLink}>
-                        <i class="fas fa-home"></i>
-                      </Link>
-                    ) : (
-                      <a href={logo.outterLink}>
-                        <i class="fas fa-home"></i>
-                      </a>
-                    )}
+          <div className="scroll-view">
+            <Collapse navbar isOpen={this.state.collapseOpen}>
+              {/* Collapse header */}
+              <div className="navbar-collapse-header d-md-none">
+                <Row>
+                  {logo ? (
+                    <Col className="collapse-brand" xs="6">
+                      {logo.innerLink ? (
+                        <Link to={logo.innerLink}>
+                          <i class="fas fa-home"></i>
+                        </Link>
+                      ) : (
+                        <a href={logo.outterLink}>
+                          <i class="fas fa-home"></i>
+                        </a>
+                      )}
+                    </Col>
+                  ) : null}
+                  <Col className="collapse-close" xs="6">
+                    <button
+                      className="navbar-toggler"
+                      type="button"
+                      onClick={this.toggleCollapse}
+                    >
+                      <span />
+                      <span />
+                    </button>
                   </Col>
-                ) : null}
-                <Col className="collapse-close" xs="6">
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    onClick={this.toggleCollapse}
-                  >
-                    <span />
-                    <span />
-                  </button>
-                </Col>
-              </Row>
-            </div>
-
-            <div className="avatarContainer">
-              <div className="image-wrapper">
-                 <img src="https://preview.dashboard-ui.com/static/media/a21.3c96e570.jpg" className="avatar-img" ></img>
+                </Row>
               </div>
-            </div>
 
-            {/* Navigation */}
-            <Nav navbar>{this.createLinks(routes)}</Nav>
-          </Collapse>
+              <div className="avatarContainer">
+                <div className="image-wrapper">
+                  <img
+                    src="https://preview.dashboard-ui.com/static/media/a21.3c96e570.jpg"
+                    className="avatar-img"
+                  ></img>
+                </div>
+                <span class="avatar-Name">Martha Blair</span>
+                <span class="avatar-Des">Art Director</span>
+              </div>
+
+              {/* Navigation */}
+              <Nav navbar>{this.createLinks(routes)}</Nav>
+
+              <div class="nav-section">
+                {" "}
+                <span class="nav-section-title">Recently viewed</span>{" "}
+                <a class="nav-link">
+                  <span class="nav-link-text">Overall Performance</span>
+                  <span class="nav-link-right-el">→</span>
+                </a>{" "}
+                <a class="nav-link">
+                  <span class="nav-link-text">Invoice #845</span>
+                  <span class="nav-link-right-el">→</span>
+                </a>{" "}
+                <a class="nav-link">
+                  <span class="nav-link-text">Customer: Minerva Viewer</span>
+                  <span class="nav-link-right-el">→</span>
+                </a>{" "}
+              </div>
+            </Collapse>
+          </div>
         </Container>
       </Navbar>
     );
