@@ -44,7 +44,7 @@ import "../../assets/css/argon-dashboard-react.css";
 // import Flags from "country-flag-icons/react/3x2";
 import ReactFlagsSelect from "react-flags-select";
 
-// import "react-flags-select/css/react-flags-select.css";
+import "react-flags-select/css/react-flags-select.css";
 
 class AdminNavbar extends React.Component {
   constructor(props) {
@@ -74,8 +74,8 @@ class AdminNavbar extends React.Component {
 
             <Nav className="align-items-center d-none d-md-flex " navbar>
               <ReactFlagsSelect
-                countries={["GB", "IN", "NO"]}
-                customLabels={{ GB: "ENG", IN: "IN", NO: "NO" }}
+                countries={["GB", "IN", "ES"]}
+                customLabels={{ GB: "ENG", IN: "HIN", ES: "ESP" }}
                 defaultCountry="GB"
               />
               {/* <Dropdown
