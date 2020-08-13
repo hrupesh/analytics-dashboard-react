@@ -21257,10 +21257,9 @@ button:focus,
 
 .nav-link {
   font-size: .875rem;
-  color: #3e3f42;
-  color: var(--text-main);
+  color: #3e3f42 !important;
   display: block;
-  padding: 0 30px;
+  /* padding: 0 30px; */
   min-height: 40px;
   display: flex;
   align-items: center;
