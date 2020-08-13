@@ -185,15 +185,15 @@ class Sidebar extends React.Component {
 
               <div className="nav-section">
                 <span className="nav-section-title">Recently viewed</span>
-                <a className="nav-link">
+                <a className="nav-link-bottom-sidenav">
                   <span className="nav-link-text">Overall Performance</span>
                   <span className="nav-link-right-el">→</span>
                 </a>
-                <a className="nav-link">
+                <a className="nav-link-bottom-sidenav">
                   <span className="nav-link-text">Invoice #845</span>
                   <span className="nav-link-right-el">→</span>
                 </a>
-                <a className="nav-link">
+                <a className="nav-link-bottom-sidenav">
                   <span className="nav-link-text">Customer: Minerva Viewer</span>
                   <span className="nav-link-right-el">→</span>
                 </a>
