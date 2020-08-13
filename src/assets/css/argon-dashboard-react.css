@@ -21246,3 +21246,24 @@ button:focus,
 .nav-section {
   margin-bottom: 20px;
 }
+
+.nav-section-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .75rem;
+  color: #9ea0a5;
+  line-height: 1.5;
+}
+
+.nav-link {
+  font-size: .875rem;
+  color: #3e3f42;
+  color: var(--text-main);
+  display: block;
+  padding: 0 30px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
