@@ -176,26 +176,26 @@ class Sidebar extends React.Component {
                     className="avatar-img"
                   ></img>
                 </div>
-                <span class="avatar-Name">Martha Blair</span>
-                <span class="avatar-Des">Art Director</span>
+                <span className="avatar-Name">Martha Blair</span>
+                <span className="avatar-Des">Art Director</span>
               </div>
 
               {/* Navigation */}
               <Nav navbar>{this.createLinks(routes)}</Nav>
 
-              <div class="nav-section">
-                <span class="nav-section-title">Recently viewed</span>
-                <a class="nav-link">
-                  <span class="nav-link-text">Overall Performance</span>
-                  <span class="nav-link-right-el">→</span>
+              <div className="nav-section">
+                <span className="nav-section-title">Recently viewed</span>
+                <a className="nav-link">
+                  <span className="nav-link-text">Overall Performance</span>
+                  <span className="nav-link-right-el">→</span>
                 </a>
-                <a class="nav-link">
-                  <span class="nav-link-text">Invoice #845</span>
-                  <span class="nav-link-right-el">→</span>
+                <a className="nav-link">
+                  <span className="nav-link-text">Invoice #845</span>
+                  <span className="nav-link-right-el">→</span>
                 </a>
-                <a class="nav-link">
-                  <span class="nav-link-text">Customer: Minerva Viewer</span>
-                  <span class="nav-link-right-el">→</span>
+                <a className="nav-link">
+                  <span className="nav-link-text">Customer: Minerva Viewer</span>
+                  <span className="nav-link-right-el">→</span>
                 </a>
               </div>
             </Collapse>
