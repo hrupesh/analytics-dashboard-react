@@ -21198,3 +21198,9 @@ button:focus,
   flex-direction: column;
   align-items: center;
 }
+
+.avatar-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}

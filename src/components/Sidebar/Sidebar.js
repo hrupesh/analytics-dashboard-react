@@ -168,6 +168,12 @@ class Sidebar extends React.Component {
               </Row>
             </div>
 
+            <div className="avatarContainer">
+              <div className="image-wrapper">
+                 <img src="https://preview.dashboard-ui.com/static/media/a21.3c96e570.jpg" className="avatar-img" ></img>
+              </div>
+            </div>
+
             {/* Navigation */}
             <Nav navbar>{this.createLinks(routes)}</Nav>
           </Collapse>
