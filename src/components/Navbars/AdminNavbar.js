@@ -38,13 +38,13 @@ import {
   // Dropdown,
 } from "reactstrap";
 import "../../assets/css/argon-dashboard-react.css";
-import { Dropdown, DropdownItem, DropdownMenu, Icon } from "@duik/it";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-import Flags from "country-flag-icons/react/3x2";
+// import { Dropdown, DropdownItem, DropdownMenu, Icon } from "@duik/it";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+// import Flags from "country-flag-icons/react/3x2";
 import ReactFlagsSelect from "react-flags-select";
 
-import "react-flags-select/css/react-flags-select.css";
+// import "react-flags-select/css/react-flags-select.css";
 
 class AdminNavbar extends React.Component {
   constructor(props) {

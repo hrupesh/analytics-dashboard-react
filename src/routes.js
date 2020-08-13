@@ -29,49 +29,35 @@ var routes = [
     name: "Dashboard",
     icon: "fas fa-th-large text-primary",
     component: Index,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/calendar",
     name: "Calendar",
     icon: "far fa-calendar-minus",
     component: Icons,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/inbox",
     name: "Inbox",
-    icon: "far fa-inbox",
+    icon: "fas fa-inbox",
     component: Maps,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/invoicing",
     name: "Invoicing",
-    icon: "ni ni-single-02 text-yellow",
+    icon: "fas fa-money-check-alt",
     component: Profile,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/lab",
     name: "Lab / Experimental",
-    icon: "ni ni-bullet-list-67 text-red",
+    icon: "fas fa-flask",
     component: Tables,
-    layout: "/admin"
+    layout: "/admin",
   },
-  {
-    path: "/login",
-    name: "Login",
-    icon: "ni ni-key-25 text-info",
-    component: Login,
-    layout: "/auth"
-  },
-  {
-    path: "/register",
-    name: "Register",
-    icon: "ni ni-circle-08 text-pink",
-    component: Register,
-    layout: "/auth"
-  }
 ];
 export default routes;

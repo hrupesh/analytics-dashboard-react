@@ -91,7 +91,7 @@ class Sidebar extends React.Component {
             onClick={this.closeCollapse}
             activeClassName="active"
           >
-            <i className={prop.icon} />
+            <i className={prop.icon} style={{ fontSize:20 }} />
             {prop.name}
           </NavLink>
         </NavItem>
