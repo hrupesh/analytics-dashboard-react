@@ -40,7 +40,7 @@ class Header extends React.Component {
             <div className="header-body">
               {/* Card stats */}
               <Row>
-                <Col lg="6" xl="3" className="pl-0">
+                <Col lg="6" xl="3" className="pl-0 pl-md-3">
                   <Card className="card-stats mb-4 mb-xl-0">
                     <CardBody className="cstm-card-body">
                       <CardTitle
@@ -83,7 +83,7 @@ class Header extends React.Component {
                       <span className="cstm-card-diff text-danger">
                         -11.9%
                         <i
-                          className="fas fa-chart-line text-danger"
+                          className="fas fa-sort-amount-down text-danger"
                           style={{ fontSize: 20, marginLeft: 12 }}
                         ></i>
                       </span>
@@ -124,7 +124,7 @@ class Header extends React.Component {
                     </CardBody>
                   </Card>
                 </Col>
-                <Col lg="6" xl="3" className="pr-0">
+                <Col lg="6" xl="3" className="pr-0 pr-md-3">
                   <Card className="card-stats mb-4 mb-xl-0">
                     <CardBody className="cstm-card-body">
                       <CardTitle
