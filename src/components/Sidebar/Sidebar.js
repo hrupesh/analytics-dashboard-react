@@ -180,7 +180,7 @@ class Sidebar extends React.Component {
                   Martha Blair
                   <i
                     className="fas fa-circle text-success"
-                    style={{ fontSize: 8 }}
+                    style={{ fontSize: 8 , marginLeft: 7}}
                   ></i>
                 </span>
                 <span className="avatar-Des">Developer</span>
