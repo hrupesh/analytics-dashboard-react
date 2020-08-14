@@ -177,10 +177,10 @@ class Sidebar extends React.Component {
                   ></img>
                 </div>
                 <span className="avatar-Name">
-                  Martha Blair{" "}
+                  Martha Blair
                   <i
                     className="fas fa-circle text-success"
-                    style={{ fontSize: 5 }}
+                    style={{ fontSize: 8, marginTop: 9, marginLeft:10 , position: "absolute" }}
                   ></i>
                 </span>
                 <span className="avatar-Des">Developer</span>

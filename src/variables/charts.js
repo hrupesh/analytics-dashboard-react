@@ -566,10 +566,271 @@ const data1 = {
   },
 };
 
+const data2 = {
+  labels: [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ],
+  datasets: [
+    {
+      label: "",
+      fill: true,
+      lineTension: 0,
+      backgroundColor: "#e7effb",
+      borderColor: "#1664d7",
+      borderWidth: 2,
+      data: [
+        15,
+        40,
+        35,
+        35,
+        45,
+        49,
+        15,
+        40,
+        35,
+        35,
+        45,
+        49,
+        15,
+        40,
+        35,
+        35,
+        45,
+        49,
+        52,
+        60,
+      ],
+    },
+  ],
+  options: {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            display: false,
+          },
+        },
+      ],
+      xAxes: [
+        {
+          ticks: {
+            display: false,
+          },
+        },
+      ],
+    },
+    tooltips: {
+      enabled: false,
+    },
+    layout: {
+      padding: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      },
+    },
+  },
+};
+
+const data3 = {
+  labels: [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ],
+  datasets: [
+    {
+      label: "",
+      fill: true,
+      lineTension: 0,
+      backgroundColor: "#e7effb",
+      borderColor: "#1664d7",
+      borderWidth: 2,
+      data: [
+        15,
+        12,
+        9,
+        15,
+        5,
+        17,
+        22,
+        14,
+        11,
+        20,
+        15,
+        12,
+        9,
+        15,
+        5,
+        17,
+        22,
+        14,
+        11,
+        20,
+      ],
+    },
+  ],
+  options: {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            display: false,
+          },
+        },
+      ],
+      xAxes: [
+        {
+          ticks: {
+            display: false,
+          },
+        },
+      ],
+    },
+    tooltips: {
+      enabled: false,
+    },
+    layout: {
+      padding: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      },
+    },
+  },
+};
+
+const data4 = {
+  labels: [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ],
+  datasets: [
+    {
+      label: "",
+      fill: true,
+      lineTension: 0,
+      backgroundColor: "#e7effb",
+      borderColor: "#1664d7",
+      borderWidth: 2,
+      data: [
+        15,
+        12,
+        9,
+        15,
+        5,
+        17,
+        22,
+        14,
+        11,
+        20,
+        15,
+        12,
+        9,
+        15,
+        5,
+        17,
+        22,
+        14,
+        11,
+        20,
+      ],
+    },
+  ],
+  options: {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            display: false,
+          },
+        },
+      ],
+      xAxes: [
+        {
+          ticks: {
+            display: false,
+          },
+        },
+      ],
+    },
+    tooltips: {
+      enabled: false,
+    },
+    layout: {
+      padding: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      },
+    },
+  },
+};
+
 module.exports = {
   chartOptions, // used inside src/views/Index.js
   parseOptions, // used inside src/views/Index.js
   chartExample1, // used inside src/views/Index.js
   chartExample2, // used inside src/views/Index.js
   data1,
+  data2,
+  data3,
+  data4,
 };

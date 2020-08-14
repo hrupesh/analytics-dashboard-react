@@ -29,6 +29,9 @@ import {
   parseOptions,
   chartExample3,
   data1,
+  data2,
+  data3,
+  data4,
 } from "variables/charts.js";
 
 class Header extends React.Component {
@@ -91,7 +94,7 @@ class Header extends React.Component {
                         className="chart"
                         style={{ height: 60, width: "100%" }}
                       >
-                        <Line data={data1} options={data1.options} />
+                        <Line data={data2} options={data2.options} />
                       </div>
                     </CardBody>
                   </Card>
@@ -119,7 +122,7 @@ class Header extends React.Component {
                         className="chart"
                         style={{ height: 60, width: "100%" }}
                       >
-                        <Line data={data1} options={data1.options} />
+                        <Line data={data3} options={data3.options} />
                       </div>
                     </CardBody>
                   </Card>
@@ -147,7 +150,7 @@ class Header extends React.Component {
                         className="chart"
                         style={{ height: 60, width: "100%" }}
                       >
-                        <Line data={data1} options={data1.options} />
+                        <Line data={data4} options={data4.options} />
                       </div>
                     </CardBody>
                   </Card>
