@@ -258,7 +258,7 @@ function chartOptions() {
   // yAxes
   Chart.scaleService.updateScaleDefaults("linear", {
     gridLines: {
-      borderDash: [2],
+      borderDash: [0],
       borderDashOffset: [2],
       color: mode === "dark" ? colors.gray[200] : colors.gray[300],
       drawBorder: true,
@@ -285,7 +285,7 @@ function chartOptions() {
     gridLines: {
       drawBorder: false,
       drawOnChartArea: false,
-      drawTicks: true,
+      drawTicks: false,
     },
     ticks: {
       padding: 20,
@@ -455,7 +455,7 @@ let chartExample2 = {
           1548,
           1548,
           1686,
-          8452,
+          4452,
           3546,
           4566,
           5124,

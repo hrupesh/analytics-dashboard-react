@@ -25,8 +25,7 @@ class Header extends React.Component {
     return (
       <>
         <div
-          className="header pb-8 pt-5 pt-md-8"
-          style={{ backgroundColor: "#fbfbfd" }}
+          className="header pb-1 pt-2 pt-md-1"
         >
           <Container fluid>
             <div className="header-body">

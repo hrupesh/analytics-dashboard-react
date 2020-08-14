@@ -80,7 +80,6 @@ class Index extends React.Component {
     });
   };
 
-
   toggleNavs = (e, index) => {
     e.preventDefault();
     this.setState({
@@ -279,30 +278,6 @@ class Index extends React.Component {
                 <CardBody>
                   {/* Chart */}
                   <div className="chart">
-                  <Bar
-                      data={chartExample2.data}
-                      options={chartExample2.options}
-                    />
-                  </div>
-                </CardBody>
-              </Card>
-            </Col>
-            <Header />
-            <Col xl="4">
-              <Card className="shadow">
-                <CardHeader className="bg-transparent">
-                  <Row className="align-items-center">
-                    <div className="col">
-                      <h6 className="text-uppercase text-muted ls-1 mb-1">
-                        Performance
-                      </h6>
-                      <h2 className="mb-0">Total orders</h2>
-                    </div>
-                  </Row>
-                </CardHeader>
-                <CardBody>
-                  {/* Chart */}
-                  <div className="chart">
                     <Bar
                       data={chartExample2.data}
                       options={chartExample2.options}
@@ -312,6 +287,7 @@ class Index extends React.Component {
               </Card>
             </Col>
           </Row>
+          <Header />
           <Row className="mt-5">
             <Col className="mb-5 mb-xl-0" xl="8">
               <Card className="shadow">
