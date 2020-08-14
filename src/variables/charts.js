@@ -197,7 +197,7 @@ function chartOptions() {
           padding: 0,
         },
         legend: {
-          display: true,
+          display: false,
           position: "top",
           labels: {
             usePointStyle: true,
@@ -210,7 +210,7 @@ function chartOptions() {
             backgroundColor: colors.theme["primary"],
           },
           line: {
-            tension: 0.4,
+            tension: 0.3,
             borderWidth: 4,
             borderColor: colors.theme["primary"],
             backgroundColor: colors.transparent,
@@ -242,7 +242,7 @@ function chartOptions() {
 
             content += '<span class="chart-legend-item">';
             content +=
-              '<i class="chart-legend-indicator" style="background-color: ' +
+              '<i class="chart-legend-indicator" style="border-radius:50%;background-color: ' +
               bgColor +
               '"></i>';
             content += label;
@@ -481,19 +481,85 @@ let chartExample2 = {
 };
 
 const data1 = {
-  labels: ["", "", "", "", "", "", "","","","","", "", "", "", "", "", "","","",""],
+  labels: [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ],
   datasets: [
     {
       label: "",
       fill: true,
-      lineTension:0,
+      lineTension: 0,
       backgroundColor: "#e7effb",
       borderColor: "#1664d7",
       borderWidth: 2,
-      tooltip: false,
-      data: [15,12,9,15,5,17,22,14,11,20,15,12,9,15,5,17,22,14,11,20],
+      data: [
+        15,
+        12,
+        9,
+        15,
+        5,
+        17,
+        22,
+        14,
+        11,
+        20,
+        15,
+        12,
+        9,
+        15,
+        5,
+        17,
+        22,
+        14,
+        11,
+        20,
+      ],
     },
   ],
+  options: {
+    scales: {
+      yAxes: [
+        {
+          gridLines: {
+            drawBorder: false,
+          },
+        },
+      ],
+    },
+    tooltips: {
+      enabled: false,
+      callbacks: {
+        label: function (tooltipItem, data) {
+          var label = data.datasets[tooltipItem.datasetIndex].label || "";
+
+          if (label) {
+            label += ": ";
+          }
+          label += Math.round(tooltipItem.yLabel * 100) / 100;
+          return label;
+        },
+      },
+    },
+  },
 };
 
 module.exports = {

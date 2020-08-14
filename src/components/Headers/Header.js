@@ -60,7 +60,7 @@ class Header extends React.Component {
                         ></i>
                       </span>
                       <div className="chart h-50">
-                        <Line data={data1} />
+                        <Line data={data1} options={data1.options} />
                       </div>
                     </CardBody>
                   </Card>
