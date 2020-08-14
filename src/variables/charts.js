@@ -539,24 +539,21 @@ const data1 = {
     scales: {
       yAxes: [
         {
-          gridLines: {
-            drawBorder: false,
+          ticks: {
+            display: false,
           },
         },
       ],
     },
     tooltips: {
       enabled: false,
-      callbacks: {
-        label: function (tooltipItem, data) {
-          var label = data.datasets[tooltipItem.datasetIndex].label || "";
-
-          if (label) {
-            label += ": ";
-          }
-          label += Math.round(tooltipItem.yLabel * 100) / 100;
-          return label;
-        },
+    },
+    layout: {
+      padding: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
       },
     },
   },
