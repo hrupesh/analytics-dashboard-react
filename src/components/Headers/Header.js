@@ -40,20 +40,20 @@ class Header extends React.Component {
             <div className="header-body">
               {/* Card stats */}
               <Row>
-                <Col lg="6" xl="3">
+                <Col lg="6" xl="3" className="pl-0">
                   <Card className="card-stats mb-4 mb-xl-0">
                     <CardBody className="cstm-card-body">
                       <CardTitle
                         tag="h5"
                         className="text-uppercase text-muted mb-0"
                       >
-                        Total Visits
+                        Realtime Users
                       </CardTitle>
                       <span className="cstm-card-value font-weight-bold mb-0 py-2">
-                        54,598
+                        56
                       </span>
                       <span className="cstm-card-diff">
-                        +10.00%
+                        +9.8%
                         <i
                           className="fas fa-chart-line "
                           style={{ fontSize: 20, marginLeft: 12 }}
@@ -80,10 +80,10 @@ class Header extends React.Component {
                       <span className="cstm-card-value font-weight-bold mb-0 py-2">
                         54,598
                       </span>
-                      <span className="cstm-card-diff">
-                        +10.00%
+                      <span className="cstm-card-diff text-danger">
+                        -11.9%
                         <i
-                          className="fas fa-chart-line "
+                          className="fas fa-chart-line text-danger"
                           style={{ fontSize: 20, marginLeft: 12 }}
                         ></i>
                       </span>
@@ -98,61 +98,57 @@ class Header extends React.Component {
                 </Col>
                 <Col lg="6" xl="3">
                   <Card className="card-stats mb-4 mb-xl-0">
-                    <CardBody>
-                      <Row>
-                        <div className="col">
-                          <CardTitle
-                            tag="h5"
-                            className="text-uppercase text-muted mb-0"
-                          >
-                            Bounce Rate
-                          </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">
-                            73.67%
-                          </span>
-                        </div>
-                        <Col className="col-auto">
-                          <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
-                            <i className="fas fa-users" />
-                          </div>
-                        </Col>
-                      </Row>
-                      <p className="mt-3 mb-0 text-muted text-sm">
-                        <span className="text-warning mr-2">
-                          <i className="fas fa-arrow-down" /> 12.2%
-                        </span>{" "}
-                        <span className="text-nowrap">Since yesterday</span>
-                      </p>
+                    <CardBody className="cstm-card-body">
+                      <CardTitle
+                        tag="h5"
+                        className="text-uppercase text-muted mb-0"
+                      >
+                        Bounce Rate
+                      </CardTitle>
+                      <span className="cstm-card-value font-weight-bold mb-0 py-2">
+                        73.67%
+                      </span>
+                      <span className="cstm-card-diff">
+                        +12.2%
+                        <i
+                          className="fas fa-chart-line "
+                          style={{ fontSize: 20, marginLeft: 12 }}
+                        ></i>
+                      </span>
+                      <div
+                        className="chart"
+                        style={{ height: 60, width: "100%" }}
+                      >
+                        <Line data={data1} options={data1.options} />
+                      </div>
                     </CardBody>
                   </Card>
                 </Col>
-                <Col lg="6" xl="3">
+                <Col lg="6" xl="3" className="pr-0">
                   <Card className="card-stats mb-4 mb-xl-0">
-                    <CardBody>
-                      <Row>
-                        <div className="col">
-                          <CardTitle
-                            tag="h5"
-                            className="text-uppercase text-muted mb-0"
-                          >
-                            Visit Duration
-                          </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">
-                            1m 4s
-                          </span>
-                        </div>
-                        <Col className="col-auto">
-                          <div className="icon icon-shape bg-info text-white rounded-circle shadow">
-                            <i className="fas fa-percent" />
-                          </div>
-                        </Col>
-                      </Row>
-                      <p className="mt-3 mb-0 text-muted text-sm">
-                        <span className="text-success mr-2">
-                          <i className="fas fa-arrow-up" /> 19.6%
-                        </span>{" "}
-                        <span className="text-nowrap">Since last month</span>
-                      </p>
+                    <CardBody className="cstm-card-body">
+                      <CardTitle
+                        tag="h5"
+                        className="text-uppercase text-muted mb-0"
+                      >
+                        Visit Duration
+                      </CardTitle>
+                      <span className="cstm-card-value font-weight-bold mb-0 py-2">
+                       1m 4s
+                      </span>
+                      <span className="cstm-card-diff">
+                        +19.6%
+                        <i
+                          className="fas fa-chart-line "
+                          style={{ fontSize: 20, marginLeft: 12 }}
+                        ></i>
+                      </span>
+                      <div
+                        className="chart"
+                        style={{ height: 60, width: "100%" }}
+                      >
+                        <Line data={data1} options={data1.options} />
+                      </div>
                     </CardBody>
                   </Card>
                 </Col>
