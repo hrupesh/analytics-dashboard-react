@@ -217,7 +217,7 @@ function chartOptions() {
             borderCapStyle: "rounded",
           },
           rectangle: {
-            backgroundColor: colors.theme["warning"],
+            backgroundColor: colors.theme["primary"],
           },
           arc: {
             backgroundColor: colors.theme["primary"],
@@ -260,12 +260,12 @@ function chartOptions() {
     gridLines: {
       borderDash: [2],
       borderDashOffset: [2],
-      color: mode === "dark" ? colors.gray[900] : colors.gray[300],
-      drawBorder: false,
-      drawTicks: false,
-      lineWidth: 0,
+      color: mode === "dark" ? colors.gray[200] : colors.gray[300],
+      drawBorder: true,
+      drawTicks: true,
+      lineWidth: 0.1,
       zeroLineWidth: 0,
-      zeroLineColor: mode === "dark" ? colors.gray[900] : colors.gray[300],
+      zeroLineColor: mode === "dark" ? colors.gray[200] : colors.gray[100],
       zeroLineBorderDash: [2],
       zeroLineBorderDashOffset: [2],
     },
@@ -377,7 +377,7 @@ let chartExample2 = {
             color: colors.gray[900],
             zeroLineColor: colors.gray[900],
           },
-          
+
           ticks: {
             callback: function (value) {
               if (!(value % 10)) {
@@ -394,7 +394,7 @@ let chartExample2 = {
         label: function (item, data) {
           var label = data.datasets[item.datasetIndex].label || "";
           var yLabel = item.yLabel;
-          var content = "";
+          var content = "Visitors            ";
           if (data.datasets.length > 1) {
             content += label;
           }
