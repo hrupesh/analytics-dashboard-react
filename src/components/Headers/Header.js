@@ -43,7 +43,7 @@ class Header extends React.Component {
             <div className="header-body">
               {/* Card stats */}
               <Row>
-                <Col lg="6" xl="3" className="pl-0 pl-md-3">
+                <Col lg="6" xl="3" className="pl-xl-0 pl-md-3">
                   <Card className="card-stats mb-4 mb-xl-0">
                     <CardBody className="cstm-card-body">
                       <CardTitle
@@ -127,7 +127,7 @@ class Header extends React.Component {
                     </CardBody>
                   </Card>
                 </Col>
-                <Col lg="6" xl="3" className="pr-0 pr-md-3">
+                <Col lg="6" xl="3" className="pr-xl-0 pr-md-3">
                   <Card className="card-stats mb-4 mb-xl-0">
                     <CardBody className="cstm-card-body">
                       <CardTitle
