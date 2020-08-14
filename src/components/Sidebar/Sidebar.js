@@ -176,7 +176,7 @@ class Sidebar extends React.Component {
                     className="avatar-img"
                   ></img>
                 </div>
-                <span className="avatar-Name py-4">
+                <span className="avatar-Name">
                   Martha Blair
                   <i
                     className="fas fa-circle text-success"
