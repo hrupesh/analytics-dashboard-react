@@ -25,9 +25,9 @@ class Header extends React.Component {
     return (
       <>
         <div
-          className="header pb-1 pt-2 pt-md-1"
+          className="header pb-1 pt-1 pt-xl-5 pt-md-2"
         >
-          <Container fluid>
+          <Container >
             <div className="header-body">
               {/* Card stats */}
               <Row>
@@ -40,10 +40,10 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Traffic
+                            Realtime users
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
-                            350,897
+                            56
                           </span>
                         </div>
                         <Col className="col-auto">
@@ -54,7 +54,7 @@ class Header extends React.Component {
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
                         <span className="text-success mr-2">
-                          <i className="fa fa-arrow-up" /> 3.48%
+                          <i className="fa fa-arrow-up" /> 9.8%
                         </span>{" "}
                         <span className="text-nowrap">Since last month</span>
                       </p>
@@ -70,10 +70,10 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            New users
+                            Total Visits
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
-                            2,356
+                            54,598
                           </span>
                         </div>
                         <Col className="col-auto">
@@ -84,7 +84,7 @@ class Header extends React.Component {
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
                         <span className="text-danger mr-2">
-                          <i className="fas fa-arrow-down" /> 3.48%
+                          <i className="fas fa-arrow-down" /> 11.9%
                         </span>{" "}
                         <span className="text-nowrap">Since last week</span>
                       </p>
@@ -100,9 +100,9 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Sales
+                            Bounce Rate
                           </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">924</span>
+                          <span className="h2 font-weight-bold mb-0">73.67%</span>
                         </div>
                         <Col className="col-auto">
                           <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
@@ -112,7 +112,7 @@ class Header extends React.Component {
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
                         <span className="text-warning mr-2">
-                          <i className="fas fa-arrow-down" /> 1.10%
+                          <i className="fas fa-arrow-down" /> 12.2%
                         </span>{" "}
                         <span className="text-nowrap">Since yesterday</span>
                       </p>
@@ -128,10 +128,10 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Performance
+                            Visit Duration
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
-                            49,65%
+                            1m 4s
                           </span>
                         </div>
                         <Col className="col-auto">
@@ -142,7 +142,7 @@ class Header extends React.Component {
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
                         <span className="text-success mr-2">
-                          <i className="fas fa-arrow-up" /> 12%
+                          <i className="fas fa-arrow-up" /> 19.6%
                         </span>{" "}
                         <span className="text-nowrap">Since last month</span>
                       </p>
