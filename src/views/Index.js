@@ -279,10 +279,9 @@ class Index extends React.Component {
                 <CardBody>
                   {/* Chart */}
                   <div className="chart">
-                    <Line
-                      data={chartExample1[this.state.chartExample1Data]}
-                      options={chartExample1.options}
-                      getDatasetAtEvent={(e) => console.log(e)}
+                  <Bar
+                      data={chartExample2.data}
+                      options={chartExample2.options}
                     />
                   </div>
                 </CardBody>
