@@ -43,9 +43,7 @@ class Header extends React.Component {
                       </span>
                       <span className="cstm-card-diff">
                         +10.00%
-                        <i class="uikon widget-chart-summary_widget-chart-summary-icon__2_uYP">
-                          trending_up
-                        </i>
+                        <i className="fas fa-chart-line px-3"></i>
                       </span>
                     </CardBody>
                   </Card>
