@@ -481,16 +481,19 @@ let chartExample2 = {
 };
 
 const data1 = {
+  labels: ["", "", "", "", "", "", "","","","","", "", "", "", "", "", "","","",""],
   datasets: [
     {
-      label:"",
+      label: "",
       fill: true,
-      backgroundColor: '#e7effb',
-      borderColor: '#1664d7',
-      borderWidth:2,
-      data: [0,1,0,1,0,1]
-    }
-  ]
+      lineTension:0,
+      backgroundColor: "#e7effb",
+      borderColor: "#1664d7",
+      borderWidth: 2,
+      tooltip: false,
+      data: [15,12,9,15,5,17,22,14,11,20,15,12,9,15,5,17,22,14,11,20],
+    },
+  ],
 };
 
 module.exports = {
