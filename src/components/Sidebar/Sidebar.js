@@ -132,7 +132,7 @@ class Sidebar extends React.Component {
           {/* Brand */}
           {logo ? (
             <NavbarBrand className="border-bottom-1 py-4" {...navbarBrandProps}>
-              <i class="fas fa-home"></i>
+              <i className="fas fa-home"></i>
             </NavbarBrand>
           ) : null}
           {/* User */}

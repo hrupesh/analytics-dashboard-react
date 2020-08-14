@@ -27,8 +27,8 @@ import { Line, Bar } from "react-chartjs-2";
 import {
   chartOptions,
   parseOptions,
-  chartExample1,
-  chartExample2,
+  chartExample3,
+  data1,
 } from "variables/charts.js";
 
 class Header extends React.Component {
@@ -59,11 +59,8 @@ class Header extends React.Component {
                           style={{ fontSize: 20, marginLeft: 12 }}
                         ></i>
                       </span>
-                      <div className="chart h-50 mt-3">
-                        <Line
-                          data={chartExample2.data}
-                          options={chartExample2.options}
-                        />
+                      <div className="chart h-50">
+                        <Line data={data1} type="line" />
                       </div>
                     </CardBody>
                   </Card>
