@@ -20,6 +20,17 @@ import React from "react";
 // reactstrap components
 import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
 
+import Chart from "chart.js";
+
+import { Line, Bar } from "react-chartjs-2";
+
+import {
+  chartOptions,
+  parseOptions,
+  chartExample1,
+  chartExample2,
+} from "variables/charts.js";
+
 class Header extends React.Component {
   render() {
     return (
@@ -48,6 +59,12 @@ class Header extends React.Component {
                           style={{ fontSize: 20, marginLeft: 12 }}
                         ></i>
                       </span>
+                      <div className="chart">
+                        <Line
+                          data={chartExample1.data}
+                          options={chartExample1.options}
+                        />
+                      </div>
                     </CardBody>
                   </Card>
                 </Col>
