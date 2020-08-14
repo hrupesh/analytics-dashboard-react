@@ -544,6 +544,13 @@ const data1 = {
           },
         },
       ],
+      xAxes: [
+        {
+          ticks: {
+            display: false,
+          },
+        },
+      ],
     },
     tooltips: {
       enabled: false,
