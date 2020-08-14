@@ -21278,3 +21278,12 @@ button:focus,
   line-height: 1rem;
   display: flex;
 }
+
+.cstm-dropdown-menu {
+  height: 40vh;
+  overflow-y: auto;
+}
+
+.cstm-dropdown-menu .dropdown-item {
+  text-align: center;
+}

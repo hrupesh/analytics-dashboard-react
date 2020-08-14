@@ -36,6 +36,10 @@ import {
   Container,
   Row,
   Col,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from "reactstrap";
 
 // core components
@@ -54,11 +58,29 @@ class Index extends React.Component {
     this.state = {
       activeNav: 1,
       chartExample1Data: "data1",
+      isOpenedMonth: false,
+      isOpenedYear: false,
+      selectedMonth: "January",
+      selectedYear: 2020,
     };
     if (window.Chart) {
       parseOptions(Chart, chartOptions());
     }
   }
+
+  toggleMonth = () => {
+    this.setState({
+      isOpenedMonth: !this.state.isOpenedMonth,
+    });
+  };
+
+  toggleYear = () => {
+    this.setState({
+      isOpenedYear: !this.state.isOpenedYear,
+    });
+  };
+
+
   toggleNavs = (e, index) => {
     e.preventDefault();
     this.setState({
@@ -71,7 +93,7 @@ class Index extends React.Component {
     return (
       <>
         {/* Page content */}
-        <Container className=""  style={{ paddingTop: 120 }} fluid>
+        <Container className="" style={{ paddingTop: 120 }} fluid>
           <Row>
             <Col className="mb-5 mb-xl-0" xl="12">
               <Card className="bg-white">
@@ -82,31 +104,174 @@ class Index extends React.Component {
                     </div>
                     <div className="col">
                       <Nav className="justify-content-end" pills>
-                        <NavItem>
-                          <NavLink
-                            className={classnames("py-2 px-3", {
-                              active: this.state.activeNav === 1,
-                            })}
-                            href="#pablo"
-                            onClick={(e) => this.toggleNavs(e, 1)}
-                          >
-                            <span className="d-none d-md-block">Month</span>
-                            <span className="d-md-none">M</span>
-                          </NavLink>
-                        </NavItem>
-                        <NavItem>
-                          <NavLink
-                            className={classnames("py-2 px-3", {
-                              active: this.state.activeNav === 2,
-                            })}
-                            data-toggle="tab"
-                            href="#pablo"
-                            onClick={(e) => this.toggleNavs(e, 2)}
-                          >
-                            <span className="d-none d-md-block">Week</span>
-                            <span className="d-md-none">W</span>
-                          </NavLink>
-                        </NavItem>
+                        <Dropdown
+                          isOpen={this.state.isOpenedMonth}
+                          toggle={this.toggleMonth}
+                        >
+                          <DropdownToggle caret>
+                            {this.state.selectedMonth}
+                          </DropdownToggle>
+                          <DropdownMenu className="cstm-dropdown-menu">
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "January" })
+                              }
+                            >
+                              January
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "February" })
+                              }
+                            >
+                              February
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "March" })
+                              }
+                            >
+                              {" "}
+                              March{" "}
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "April" })
+                              }
+                            >
+                              {" "}
+                              April{" "}
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "May" })
+                              }
+                            >
+                              {" "}
+                              May{" "}
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "June" })
+                              }
+                            >
+                              {" "}
+                              June{" "}
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "July" })
+                              }
+                            >
+                              {" "}
+                              July{" "}
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "August" })
+                              }
+                            >
+                              {" "}
+                              August{" "}
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "September" })
+                              }
+                            >
+                              {" "}
+                              September{" "}
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "October" })
+                              }
+                            >
+                              {" "}
+                              October{" "}
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "November" })
+                              }
+                            >
+                              {" "}
+                              November{" "}
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedMonth: "December" })
+                              }
+                            >
+                              {" "}
+                              December{" "}
+                            </DropdownItem>
+                          </DropdownMenu>
+                        </Dropdown>
+                      </Nav>
+                    </div>
+                    <div className="col">
+                      <Nav className="justify-content-end" pills>
+                        <Dropdown
+                          isOpen={this.state.isOpenedYear}
+                          toggle={this.toggleYear}
+                        >
+                          <DropdownToggle caret>
+                            {this.state.selectedYear}
+                          </DropdownToggle>
+                          <DropdownMenu className="cstm-dropdown-menu">
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedYear: 2020 })
+                              }
+                            >
+                              2020
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedYear: 2019 })
+                              }
+                            >
+                              2019
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedYear: 2018 })
+                              }
+                            >
+                              2018
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedYear: 2017 })
+                              }
+                            >
+                              2017
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem
+                              onClick={() =>
+                                this.setState({ selectedYear: 2016 })
+                              }
+                            >
+                              2016
+                            </DropdownItem>
+                          </DropdownMenu>
+                        </Dropdown>
                       </Nav>
                     </div>
                   </Row>
