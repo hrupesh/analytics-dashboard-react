@@ -24,40 +24,29 @@ class Header extends React.Component {
   render() {
     return (
       <>
-        <div
-          className="header pb-1 pt-1 pt-xl-5 pt-md-2"
-        >
-          <Container >
+        <div className="header pb-1 pt-1 pt-xl-5 pt-md-2">
+          <Container>
             <div className="header-body">
               {/* Card stats */}
               <Row>
                 <Col lg="6" xl="3">
                   <Card className="card-stats mb-4 mb-xl-0">
-                    <CardBody>
-                      <Row>
-                        <div className="col">
-                          <CardTitle
-                            tag="h5"
-                            className="text-uppercase text-muted mb-0"
-                          >
-                            Realtime users
-                          </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">
-                            56
-                          </span>
-                        </div>
-                        <Col className="col-auto">
-                          <div className="icon icon-shape bg-danger text-white rounded-circle shadow">
-                            <i className="fas fa-chart-bar" />
-                          </div>
-                        </Col>
-                      </Row>
-                      <p className="mt-3 mb-0 text-muted text-sm">
-                        <span className="text-success mr-2">
-                          <i className="fa fa-arrow-up" /> 9.8%
-                        </span>{" "}
-                        <span className="text-nowrap">Since last month</span>
-                      </p>
+                    <CardBody className="cstm-card-body">
+                      <CardTitle
+                        tag="h5"
+                        className="text-uppercase text-muted mb-0"
+                      >
+                        Total Visits
+                      </CardTitle>
+                      <span className="cstm-card-value font-weight-bold mb-0 py-2">
+                        54,598
+                      </span>
+                      <span className="cstm-card-diff">
+                        +10.00%
+                        <i class="uikon widget-chart-summary_widget-chart-summary-icon__2_uYP">
+                          trending_up
+                        </i>
+                      </span>
                     </CardBody>
                   </Card>
                 </Col>
@@ -102,7 +91,9 @@ class Header extends React.Component {
                           >
                             Bounce Rate
                           </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">73.67%</span>
+                          <span className="h2 font-weight-bold mb-0">
+                            73.67%
+                          </span>
                         </div>
                         <Col className="col-auto">
                           <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">

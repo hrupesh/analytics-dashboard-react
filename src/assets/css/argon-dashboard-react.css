@@ -21287,3 +21287,24 @@ button:focus,
 .cstm-dropdown-menu .dropdown-item {
   text-align: center;
 }
+
+.cstm-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cstm-card-value {
+  font-size: 2.25rem;
+  color: #3e3f42;
+  line-height: 3.125rem;
+}
+
+.cstm-card-diff {
+  color: #38b249;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.375rem;
+}
