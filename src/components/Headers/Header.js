@@ -59,10 +59,10 @@ class Header extends React.Component {
                           style={{ fontSize: 20, marginLeft: 12 }}
                         ></i>
                       </span>
-                      <div className="chart">
+                      <div className="chart h-50 mt-3">
                         <Line
-                          data={chartExample1.data}
-                          options={chartExample1.options}
+                          data={chartExample2.data}
+                          options={chartExample2.options}
                         />
                       </div>
                     </CardBody>
