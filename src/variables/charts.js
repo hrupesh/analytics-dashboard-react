@@ -394,7 +394,7 @@ let chartExample2 = {
         label: function (item, data) {
           var label = data.datasets[item.datasetIndex].label || "";
           var yLabel = item.yLabel;
-          var content = "Visitors            ";
+          var content = "Visitors        ";
           if (data.datasets.length > 1) {
             content += label;
           }
