@@ -176,13 +176,13 @@ class Sidebar extends React.Component {
                     className="avatar-img"
                   ></img>
                 </div>
-                <span className="avatar-Name">
+                <div className="avatar-Name d-flex align-items-center">
                   Martha Blair
                   <i
                     className="fas fa-circle text-success"
                     style={{ fontSize: 8 , marginLeft: 7}}
                   ></i>
-                </span>
+                </div>
                 <span className="avatar-Des">Developer</span>
               </div>
 
