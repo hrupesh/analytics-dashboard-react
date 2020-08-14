@@ -43,7 +43,10 @@ class Header extends React.Component {
                       </span>
                       <span className="cstm-card-diff">
                         +10.00%
-                        <i className="fas fa-chart-line px-3"></i>
+                        <i
+                          className="fas fa-chart-line "
+                          style={{ fontSize: 20, marginLeft: 12 }}
+                        ></i>
                       </span>
                     </CardBody>
                   </Card>
