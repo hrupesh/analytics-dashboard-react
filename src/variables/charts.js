@@ -485,15 +485,10 @@ const data1 = {
     {
       label:"",
       fill: true,
-      lineTension: 0.4,
       backgroundColor: '#e7effb',
       borderColor: '#1664d7',
-      borderCapStyle: 'square',
-      pointBorderWidth: 1,
       borderWidth:2,
-      pointRadius: 0,
-      pointHitRadius: 0,
-      data: [21,98, 12, 82, 12, 95, 30,83,38,92,34,85,29]
+      data: [0,1,0,1,0,1]
     }
   ]
 };
