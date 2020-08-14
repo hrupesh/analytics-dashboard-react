@@ -59,7 +59,10 @@ class Header extends React.Component {
                           style={{ fontSize: 20, marginLeft: 12 }}
                         ></i>
                       </span>
-                      <div className="chart" style={{ height: 60 }}>
+                      <div
+                        className="chart"
+                        style={{ height: 60, width: "100%" }}
+                      >
                         <Line data={data1} options={data1.options} />
                       </div>
                     </CardBody>
@@ -67,31 +70,29 @@ class Header extends React.Component {
                 </Col>
                 <Col lg="6" xl="3">
                   <Card className="card-stats mb-4 mb-xl-0">
-                    <CardBody>
-                      <Row>
-                        <div className="col">
-                          <CardTitle
-                            tag="h5"
-                            className="text-uppercase text-muted mb-0"
-                          >
-                            Total Visits
-                          </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">
-                            54,598
-                          </span>
-                        </div>
-                        <Col className="col-auto">
-                          <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
-                            <i className="fas fa-chart-pie" />
-                          </div>
-                        </Col>
-                      </Row>
-                      <p className="mt-3 mb-0 text-muted text-sm">
-                        <span className="text-danger mr-2">
-                          <i className="fas fa-arrow-down" /> 11.9%
-                        </span>{" "}
-                        <span className="text-nowrap">Since last week</span>
-                      </p>
+                    <CardBody className="cstm-card-body">
+                      <CardTitle
+                        tag="h5"
+                        className="text-uppercase text-muted mb-0"
+                      >
+                        Total Visits
+                      </CardTitle>
+                      <span className="cstm-card-value font-weight-bold mb-0 py-2">
+                        54,598
+                      </span>
+                      <span className="cstm-card-diff">
+                        +10.00%
+                        <i
+                          className="fas fa-chart-line "
+                          style={{ fontSize: 20, marginLeft: 12 }}
+                        ></i>
+                      </span>
+                      <div
+                        className="chart"
+                        style={{ height: 60, width: "100%" }}
+                      >
+                        <Line data={data1} options={data1.options} />
+                      </div>
                     </CardBody>
                   </Card>
                 </Col>
