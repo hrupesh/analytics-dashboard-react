@@ -594,8 +594,8 @@ const data2 = {
       label: "",
       fill: true,
       lineTension: 0,
-      backgroundColor: "#e7effb",
-      borderColor: "#1664d7",
+      backgroundColor: "#eaf6ec",
+      borderColor: "#38b249",
       borderWidth: 2,
       data: [
         15,
