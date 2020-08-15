@@ -218,7 +218,7 @@ class Sidebar extends React.Component {
               <div className="avatarContainer">
                 <div className="image-wrapper">
                   <img
-                    src="https://preview.dashboard-ui.com/static/media/a21.3c96e570.jpg"
+                    src="http://picsum.photos/400/400"
                     className="avatar-img"
                   ></img>
                   <i className="fas fa-cog text-muted avatar-cog"></i>
