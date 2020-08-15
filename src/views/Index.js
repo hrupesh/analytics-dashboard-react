@@ -105,11 +105,12 @@ class Index extends React.Component {
                     <div className="col">
                       <h2 className="text-dark mb-0">Daily Visitors</h2>
                     </div>
-                    <div className="col-2">
+                    <div className="col-2  col-xl-1">
                       <Nav className="justify-content-end" pills>
                         <Dropdown
                           isOpen={this.state.isOpenedMonth}
                           toggle={this.toggleMonth}
+                          direction="left"
                         >
                           <DropdownToggle caret>
                             {this.state.selectedMonth}
@@ -224,7 +225,7 @@ class Index extends React.Component {
                         </Dropdown>
                       </Nav>
                     </div>
-                    <div className="col-2">
+                    <div className="col-2 col-xl-1 my-xl-3">
                       <Nav className="justify-content-end" pills>
                         <Dropdown
                           isOpen={this.state.isOpenedYear}

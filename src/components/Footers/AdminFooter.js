@@ -1,4 +1,3 @@
-
 /*eslint-disable*/
 import React from "react";
 
@@ -12,7 +11,7 @@ class Footer extends React.Component {
         <Row className="align-items-center justify-content-xl-between">
           <Col xl="6">
             <div className="copyright text-center text-xl-left text-muted">
-              © 2020 | made with 💕 |
+              © 2020 | Made with 💝 by
               <a
                 className="font-weight-bold ml-1"
                 href="https://rupesh.cf/"
@@ -23,7 +22,6 @@ class Footer extends React.Component {
               </a>
             </div>
           </Col>
-
         </Row>
       </footer>
     );
