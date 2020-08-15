@@ -110,7 +110,7 @@ class Index extends React.Component {
                         <Dropdown
                           isOpen={this.state.isOpenedMonth}
                           toggle={this.toggleMonth}
-                          direction="left"
+                          direction="down"
                         >
                           <DropdownToggle caret>
                             {this.state.selectedMonth}
@@ -225,7 +225,7 @@ class Index extends React.Component {
                         </Dropdown>
                       </Nav>
                     </div>
-                    <div className="col-2 col-xl-1 my-xl-3">
+                    <div className="col-2 col-xl-1 ml-xl-5 mr-xl-2">
                       <Nav className="justify-content-end" pills>
                         <Dropdown
                           isOpen={this.state.isOpenedYear}
@@ -303,7 +303,7 @@ class Index extends React.Component {
                     </div>
                   </Row>
                 </CardHeader>
-                <Table className="align-items-center table-flush" responsive>
+                <Table className="align-items-center table-flush " responsive>
                   <thead className="thead-light">
                     <tr>
                       <th scope="col">Page name</th>
@@ -314,7 +314,7 @@ class Index extends React.Component {
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">
+                      <th scope="row" className="cstm-th">
                         /store/
                         <i
                           className="far fa-caret-square-up text-muted float-right mr-0"
@@ -342,8 +342,8 @@ class Index extends React.Component {
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">
-                        /store/sybols-styleguides
+                      <th scope="row" className="cstm-th">
+                        /store/symbols-styleguides
                         <i
                           className="far fa-caret-square-up text-muted float-right mr-0"
                           style={{ fontSize: 20 }}
@@ -370,7 +370,7 @@ class Index extends React.Component {
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">
+                      <th scope="row" className="cstm-th">
                         /store/dashboard-ui-kit
                         <i
                           className="far fa-caret-square-up text-muted float-right mr-0"
@@ -398,7 +398,7 @@ class Index extends React.Component {
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">
+                      <th scope="row" className="cstm-th">
                         /store/webflow-cards.html
                         <i
                           className="far fa-caret-square-up text-muted float-right mr-0"

@@ -21230,6 +21230,7 @@ button:focus,
 
 ::-webkit-scrollbar {
   width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -21309,8 +21310,15 @@ button:focus,
   line-height: 1.375rem;
 }
 
-@media(min-width:1400px){
+@media(min-width:1200px) and (max-width:1500px){
   .cstm-table{
-    min-height: 30vh;
+    min-height: 330px;
+  }
+}
+
+@media(min-width:1200px) and (max-width:1400px){
+  .cstm-th{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
