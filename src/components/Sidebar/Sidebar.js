@@ -238,6 +238,7 @@ class Sidebar extends React.Component {
                     src="https://preview.dashboard-ui.com/static/media/a21.3c96e570.jpg"
                     className="avatar-img"
                   ></img>
+                    <i className="fas fa-cog text-muted avatar-cog"  ></i>
                 </div>
                 <div className="avatar-Name d-flex align-items-center">
                   Martha Blair

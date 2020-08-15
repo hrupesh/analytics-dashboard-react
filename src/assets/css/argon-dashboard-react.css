@@ -21204,6 +21204,8 @@ button:focus,
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  position: relative;
+  left:10px
 }
 
 .image-wrapper {
@@ -21215,6 +21217,18 @@ button:focus,
   font-weight: 500;
   line-height: 1.5rem;
   font-size: 1rem;
+}
+
+.avatar-cog {
+  position: relative;
+  bottom: -40px;
+  right: 35px;
+  background-color: white;
+  /* top: 21%; */
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .avatar-Des {
@@ -21310,14 +21324,14 @@ button:focus,
   line-height: 1.375rem;
 }
 
-@media(min-width:1200px) and (max-width:1500px){
-  .cstm-table{
+@media(min-width:1200px) and (max-width:1500px) {
+  .cstm-table {
     min-height: 330px;
   }
 }
 
-@media(min-width:1200px) and (max-width:1400px){
-  .cstm-th{
+@media(min-width:1200px) and (max-width:1400px) {
+  .cstm-th {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
