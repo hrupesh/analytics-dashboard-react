@@ -333,12 +333,20 @@ class Index extends React.Component {
                       <td>4,890</td>
                       <td>3,985</td>
                       <td>
-                        81.56%
                         <div
-                          className="chart"
-                          style={{ height: 60, width: "100%" }}
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                          }}
                         >
-                          <Line data={data1} options={data1.options} />
+                          81.56%
+                          <div
+                            className="chart"
+                            style={{ height: 40, width: 100 }}
+                          >
+                            <Line data={data1} options={data1.options} />
+                          </div>
                         </div>
                       </td>
                     </tr>
@@ -352,7 +360,23 @@ class Index extends React.Component {
                       </th>
                       <td>3,785</td>
                       <td>3,182</td>
-                      <td>62.56%</td>
+                      <td>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                          }}
+                        >
+                          62.56%
+                          <div
+                            className="chart"
+                            style={{ height: 40, width: 100 }}
+                          >
+                            <Line data={data2} options={data1.options} />
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">
@@ -364,7 +388,23 @@ class Index extends React.Component {
                       </th>
                       <td>2,985</td>
                       <td>2,115</td>
-                      <td>58,76%</td>
+                      <td>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                          }}
+                        >
+                          58.76%
+                          <div
+                            className="chart"
+                            style={{ height: 40, width: 100 }}
+                          >
+                            <Line data={data3} options={data1.options} />
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">
@@ -376,7 +416,23 @@ class Index extends React.Component {
                       </th>
                       <td>2,440</td>
                       <td>1,789</td>
-                      <td>39.59%</td>
+                      <td>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                          }}
+                        >
+                         39.59%
+                          <div
+                            className="chart"
+                            style={{ height: 40, width: 100 }}
+                          >
+                            <Line data={data4} options={data1.options} />
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </Table>
