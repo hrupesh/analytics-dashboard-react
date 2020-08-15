@@ -92,6 +92,7 @@ class Sidebar extends React.Component {
                 tag={NavLinkRRD}
                 onClick={this.closeCollapse}
                 activeClassName="active"
+                className="font-weight-600"
               >
                 <i
                   className={prop.icon}
@@ -103,6 +104,36 @@ class Sidebar extends React.Component {
                   style={{ position: "absolute", right: 0 }}
                 ></i>
               </NavLink>
+              <Collapse
+                style={{
+                  paddingLeft: 35,
+                  paddingRight: 16,
+                  paddingBottom: 10,
+                  marginTop: -15,
+                }}
+                isOpen={true}
+              >
+                <NavLink
+                  style={{ paddingBottom: 8, paddingTop: 8 }}
+                  className="text-muted font-weight-500"
+                >
+                  {" "}
+                  Page Vistors{" "}
+                </NavLink>
+                <NavLink
+                  style={{ paddingBottom: 8, paddingTop: 8 }}
+                  className="text-muted font-weight-500"
+                >
+                  Post Performance
+                </NavLink>
+                <NavLink
+                  style={{ paddingBottom: 8, paddingTop: 8 }}
+                  className="text-muted font-weight-500"
+                >
+                  {" "}
+                  Team Overall{" "}
+                </NavLink>
+              </Collapse>
             </div>
           </NavItem>
         );
@@ -115,6 +146,7 @@ class Sidebar extends React.Component {
               tag={NavLinkRRD}
               onClick={this.closeCollapse}
               activeClassName="active"
+              className="font-weight-600"
             >
               <i className={prop.icon} style={{ fontSize: 20, marginTop: 5 }} />
               {prop.name}
