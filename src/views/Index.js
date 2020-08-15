@@ -293,7 +293,7 @@ class Index extends React.Component {
           </Row>
           <Header />
           <Row className="mt-5">
-            <Col className="mb-5 mb-xl-0" xl="8">
+            <Col className="mb-5 mb-xl-0" xl="7">
               <Card className="shadow">
                 <CardHeader className="border-0">
                   <Row className="align-items-center">
@@ -428,7 +428,7 @@ class Index extends React.Component {
                 </Table>
               </Card>
             </Col>
-            <Col xl="4">
+            <Col xl="5">
               <Card className="shadow">
                 <CardHeader className="border-0">
                   <Row className="align-items-center">
@@ -437,7 +437,7 @@ class Index extends React.Component {
                     </div>
                   </Row>
                 </CardHeader>
-                <Table className="align-items-center table-flush" responsive>
+                <Table className="align-items-center table-flush cstm-table" responsive>
                   <thead className="thead-light">
                     <tr>
                       <th scope="col">Network</th>
@@ -446,7 +446,7 @@ class Index extends React.Component {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr >
                       <th scope="row">Instagram</th>
                       <td>3,550</td>
                       <td>
