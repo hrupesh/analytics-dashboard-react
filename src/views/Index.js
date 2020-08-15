@@ -373,7 +373,7 @@ class Index extends React.Component {
                             className="chart"
                             style={{ height: 40, width: 100 }}
                           >
-                            <Line data={data2} options={data1.options} />
+                            <Line data={data1} options={data1.options} />
                           </div>
                         </div>
                       </td>
@@ -401,7 +401,7 @@ class Index extends React.Component {
                             className="chart"
                             style={{ height: 40, width: 100 }}
                           >
-                            <Line data={data3} options={data1.options} />
+                            <Line data={data1} options={data1.options} />
                           </div>
                         </div>
                       </td>
@@ -429,7 +429,7 @@ class Index extends React.Component {
                             className="chart"
                             style={{ height: 40, width: 100 }}
                           >
-                            <Line data={data4} options={data1.options} />
+                            <Line data={data1} options={data1.options} />
                           </div>
                         </div>
                       </td>
