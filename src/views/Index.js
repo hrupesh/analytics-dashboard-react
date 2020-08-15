@@ -414,7 +414,7 @@ class Index extends React.Component {
                             alignItems: "center",
                           }}
                         >
-                         39.59%
+                          39.59%
                           <div
                             className="chart"
                             style={{ height: 40, width: 100 }}
@@ -454,8 +454,8 @@ class Index extends React.Component {
                           <div>
                             <Progress
                               max="100"
-                              value="60"
-                              barClassName="bg-gradient-danger"
+                              value="80"
+                              barClassName="bg-gradient-primary"
                             />
                           </div>
                         </div>
@@ -469,8 +469,8 @@ class Index extends React.Component {
                           <div>
                             <Progress
                               max="100"
-                              value="70"
-                              barClassName="bg-gradient-success"
+                              value="50"
+                              barClassName="bg-gradient-primary"
                             />
                           </div>
                         </div>
@@ -482,7 +482,11 @@ class Index extends React.Component {
                       <td>
                         <div className="d-flex align-items-center">
                           <div>
-                            <Progress max="100" value="80" />
+                            <Progress
+                              max="100"
+                              value="40"
+                              className="bg-gradient-primary"
+                            />
                           </div>
                         </div>
                       </td>
@@ -495,8 +499,8 @@ class Index extends React.Component {
                           <div>
                             <Progress
                               max="100"
-                              value="75"
-                              barClassName="bg-gradient-info"
+                              value="5"
+                              barClassName="bg-gradient-primary"
                             />
                           </div>
                         </div>
