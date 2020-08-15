@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Argon Dashboard React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -137,7 +120,7 @@ class Header extends React.Component {
                         Visit Duration
                       </CardTitle>
                       <span className="cstm-card-value font-weight-bold mb-0 py-2">
-                       1m 4s
+                        1m 4s
                       </span>
                       <span className="cstm-card-diff">
                         +19.6%
