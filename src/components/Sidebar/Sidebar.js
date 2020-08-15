@@ -83,6 +83,30 @@ class Sidebar extends React.Component {
   // creates the links that appear in the left menu / Sidebar
   createLinks = (routes) => {
     return routes.map((prop, key) => {
+      if (prop.name === "Dashboard") {
+        return (
+          <NavItem key={key} style={{ borderColor: "black", borderWidth: 1 }}>
+            <div className="cstm-nav-link">
+              <NavLink
+                to={prop.layout + prop.path}
+                tag={NavLinkRRD}
+                onClick={this.closeCollapse}
+                activeClassName="active"
+              >
+                <i
+                  className={prop.icon}
+                  style={{ fontSize: 20, marginTop: 5 }}
+                />
+                {prop.name}
+                <i
+                  className="fas fa-caret-down  text-primary"
+                  style={{ position: "absolute", right: 0 }}
+                ></i>
+              </NavLink>
+            </div>
+          </NavItem>
+        );
+      }
       return (
         <NavItem key={key} style={{ borderColor: "black", borderWidth: 1 }}>
           <div className="cstm-nav-link">
@@ -180,7 +204,7 @@ class Sidebar extends React.Component {
                   Martha Blair
                   <i
                     className="fas fa-circle text-success"
-                    style={{ fontSize: 7 , marginLeft: 8}}
+                    style={{ fontSize: 7, marginLeft: 8 }}
                   ></i>
                 </div>
                 <span className="avatar-Des">Developer</span>
