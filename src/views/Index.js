@@ -331,31 +331,40 @@ class Index extends React.Component {
                       <td>81.56%</td>
                     </tr>
                     <tr>
-                      <th scope="row">/store/sybols-styleguides</th>
+                      <th scope="row">
+                        /store/sybols-styleguides
+                        <i
+                          className="far fa-caret-square-up text-dark float-right mr-0"
+                          style={{ fontSize: 20 }}
+                        />
+                      </th>
                       <td>3,785</td>
                       <td>3,182</td>
-                      <td>
-                        <i className="fas fa-arrow-down text-warning mr-3" />{" "}
-                        62.56%
-                      </td>
+                      <td>62.56%</td>
                     </tr>
                     <tr>
-                      <th scope="row">/store/dashboard-ui-kit</th>
+                      <th scope="row">
+                        /store/dashboard-ui-kit
+                        <i
+                          className="far fa-caret-square-up text-dark float-right mr-0"
+                          style={{ fontSize: 20 }}
+                        />
+                      </th>
                       <td>2,985</td>
                       <td>2,115</td>
-                      <td>
-                        <i className="fas fa-arrow-down text-warning mr-3" />{" "}
-                        58,76%
-                      </td>
+                      <td>58,76%</td>
                     </tr>
                     <tr>
-                      <th scope="row">/store/webflow-cards.html</th>
+                      <th scope="row">
+                        /store/webflow-cards.html
+                        <i
+                          className="far fa-caret-square-up text-dark float-right mr-0"
+                          style={{ fontSize: 20 }}
+                        />
+                      </th>
                       <td>2,440</td>
                       <td>1,789</td>
-                      <td>
-                        <i className="fas fa-arrow-up text-success mr-3" />{" "}
-                        39.59%
-                      </td>
+                      <td>39.59%</td>
                     </tr>
                   </tbody>
                 </Table>
