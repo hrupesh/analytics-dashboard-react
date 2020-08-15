@@ -294,17 +294,17 @@ class Index extends React.Component {
                 <CardHeader className="border-0">
                   <Row className="align-items-center">
                     <div className="col">
-                      <h3 className="mb-0">Page visits</h3>
+                      <h3 className="mb-0">Most Visited Pages</h3>
                     </div>
                     <div className="col text-right">
-                      <Button
+                      {/* <Button
                         color="primary"
                         href="#pablo"
                         onClick={(e) => e.preventDefault()}
                         size="sm"
                       >
                         See all
-                      </Button>
+                      </Button> */}
                     </div>
                   </Row>
                 </CardHeader>
@@ -313,54 +313,45 @@ class Index extends React.Component {
                     <tr>
                       <th scope="col">Page name</th>
                       <th scope="col">Visitors</th>
-                      <th scope="col">Unique users</th>
+                      <th scope="col">Unique Page Visits</th>
                       <th scope="col">Bounce rate</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">/argon/</th>
-                      <td>4,569</td>
-                      <td>340</td>
-                      <td>
-                        <i className="fas fa-arrow-up text-success mr-3" />{" "}
-                        46,53%
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">/argon/index.html</th>
+                      <th scope="row">
+                        /store/
+                        <i className="fas fa-arrow-up text-dark float-right mr-3" />
+                      </th>
+                      <td>4,890</td>
                       <td>3,985</td>
-                      <td>319</td>
+                      <td>81.56%</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">/store/sybols-styleguides</th>
+                      <td>3,785</td>
+                      <td>3,182</td>
                       <td>
                         <i className="fas fa-arrow-down text-warning mr-3" />{" "}
-                        46,53%
+                        62.56%
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">/argon/charts.html</th>
-                      <td>3,513</td>
-                      <td>294</td>
+                      <th scope="row">/store/dashboard-ui-kit</th>
+                      <td>2,985</td>
+                      <td>2,115</td>
                       <td>
                         <i className="fas fa-arrow-down text-warning mr-3" />{" "}
-                        36,49%
+                        58,76%
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">/argon/tables.html</th>
-                      <td>2,050</td>
-                      <td>147</td>
+                      <th scope="row">/store/webflow-cards.html</th>
+                      <td>2,440</td>
+                      <td>1,789</td>
                       <td>
                         <i className="fas fa-arrow-up text-success mr-3" />{" "}
-                        50,87%
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">/argon/profile.html</th>
-                      <td>1,795</td>
-                      <td>190</td>
-                      <td>
-                        <i className="fas fa-arrow-down text-danger mr-3" />{" "}
-                        46,53%
+                        39.59%
                       </td>
                     </tr>
                   </tbody>
