@@ -48,6 +48,10 @@ import {
   parseOptions,
   chartExample1,
   chartExample2,
+  data1,
+  data2,
+  data3,
+  data4,
 } from "variables/charts.js";
 
 import Header from "components/Headers/Header.js";
@@ -322,19 +326,27 @@ class Index extends React.Component {
                       <th scope="row">
                         /store/
                         <i
-                          className="far fa-caret-square-up text-dark float-right mr-0"
+                          className="far fa-caret-square-up text-muted float-right mr-0"
                           style={{ fontSize: 20 }}
                         />
                       </th>
                       <td>4,890</td>
                       <td>3,985</td>
-                      <td>81.56%</td>
+                      <td>
+                        81.56%
+                        <div
+                          className="chart"
+                          style={{ height: 60, width: "100%" }}
+                        >
+                          <Line data={data1} options={data1.options} />
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">
                         /store/sybols-styleguides
                         <i
-                          className="far fa-caret-square-up text-dark float-right mr-0"
+                          className="far fa-caret-square-up text-muted float-right mr-0"
                           style={{ fontSize: 20 }}
                         />
                       </th>
@@ -346,7 +358,7 @@ class Index extends React.Component {
                       <th scope="row">
                         /store/dashboard-ui-kit
                         <i
-                          className="far fa-caret-square-up text-dark float-right mr-0"
+                          className="far fa-caret-square-up text-muted float-right mr-0"
                           style={{ fontSize: 20 }}
                         />
                       </th>
@@ -358,7 +370,7 @@ class Index extends React.Component {
                       <th scope="row">
                         /store/webflow-cards.html
                         <i
-                          className="far fa-caret-square-up text-dark float-right mr-0"
+                          className="far fa-caret-square-up text-muted float-right mr-0"
                           style={{ fontSize: 20 }}
                         />
                       </th>
