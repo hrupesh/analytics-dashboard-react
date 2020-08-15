@@ -300,16 +300,6 @@ class Index extends React.Component {
                     <div className="col">
                       <h3 className="mb-0">Most Visited Pages</h3>
                     </div>
-                    <div className="col text-right">
-                      {/* <Button
-                        color="primary"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                        size="sm"
-                      >
-                        See all
-                      </Button> */}
-                    </div>
                   </Row>
                 </CardHeader>
                 <Table className="align-items-center table-flush" responsive>
@@ -443,35 +433,24 @@ class Index extends React.Component {
                 <CardHeader className="border-0">
                   <Row className="align-items-center">
                     <div className="col">
-                      <h3 className="mb-0">Social traffic</h3>
-                    </div>
-                    <div className="col text-right">
-                      <Button
-                        color="primary"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                        size="sm"
-                      >
-                        See all
-                      </Button>
+                      <h3 className="mb-0">Social Media Traffic</h3>
                     </div>
                   </Row>
                 </CardHeader>
                 <Table className="align-items-center table-flush" responsive>
                   <thead className="thead-light">
                     <tr>
-                      <th scope="col">Referral</th>
+                      <th scope="col">Network</th>
                       <th scope="col">Visitors</th>
                       <th scope="col" />
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Facebook</th>
-                      <td>1,480</td>
+                      <th scope="row">Instagram</th>
+                      <td>3,550</td>
                       <td>
                         <div className="d-flex align-items-center">
-                          <span className="mr-2">60%</span>
                           <div>
                             <Progress
                               max="100"
@@ -484,10 +463,9 @@ class Index extends React.Component {
                     </tr>
                     <tr>
                       <th scope="row">Facebook</th>
-                      <td>5,480</td>
+                      <td>2,236</td>
                       <td>
                         <div className="d-flex align-items-center">
-                          <span className="mr-2">70%</span>
                           <div>
                             <Progress
                               max="100"
@@ -499,11 +477,10 @@ class Index extends React.Component {
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">Google</th>
-                      <td>4,807</td>
+                      <th scope="row">Twitter</th>
+                      <td>1,795</td>
                       <td>
                         <div className="d-flex align-items-center">
-                          <span className="mr-2">80%</span>
                           <div>
                             <Progress max="100" value="80" />
                           </div>
@@ -511,32 +488,15 @@ class Index extends React.Component {
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">Instagram</th>
-                      <td>3,678</td>
+                      <th scope="row">Linkedin</th>
+                      <td>62</td>
                       <td>
                         <div className="d-flex align-items-center">
-                          <span className="mr-2">75%</span>
                           <div>
                             <Progress
                               max="100"
                               value="75"
                               barClassName="bg-gradient-info"
-                            />
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">twitter</th>
-                      <td>2,645</td>
-                      <td>
-                        <div className="d-flex align-items-center">
-                          <span className="mr-2">30%</span>
-                          <div>
-                            <Progress
-                              max="100"
-                              value="30"
-                              barClassName="bg-gradient-warning"
                             />
                           </div>
                         </div>
