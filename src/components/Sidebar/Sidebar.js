@@ -78,7 +78,7 @@ class Sidebar extends React.Component {
           <NavItem key={key} style={{ borderColor: "black", borderWidth: 1 }}>
             <div className="cstm-nav-link">
               <NavLink
-                to={prop.layout + prop.path}
+                to={"#"}
                 tag={NavLinkRRD}
                 onClick={this.toggleDashCollapse}
                 activeClassName="active"
@@ -104,6 +104,7 @@ class Sidebar extends React.Component {
                 isOpen={this.state.dashCollapse}
               >
                 <NavLink
+                  to={"#"}
                   style={{ paddingBottom: 8, paddingTop: 8 }}
                   className="text-primary font-weight-700"
                 >
@@ -111,12 +112,14 @@ class Sidebar extends React.Component {
                   Page Vistors{" "}
                 </NavLink>
                 <NavLink
+                  to={"#"}
                   style={{ paddingBottom: 8, paddingTop: 8 }}
                   className="text-muted font-weight-600"
                 >
                   Post Performance
                 </NavLink>
                 <NavLink
+                  to={"#"}
                   style={{ paddingBottom: 8, paddingTop: 8 }}
                   className="text-muted font-weight-600"
                 >
@@ -132,7 +135,7 @@ class Sidebar extends React.Component {
         <NavItem key={key} style={{ borderColor: "black", borderWidth: 1 }}>
           <div className="cstm-nav-link">
             <NavLink
-              to={prop.layout + prop.path}
+              to={"#"}
               tag={NavLinkRRD}
               onClick={this.closeCollapse}
               activeClassName="active"
