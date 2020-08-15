@@ -321,7 +321,10 @@ class Index extends React.Component {
                     <tr>
                       <th scope="row">
                         /store/
-                        <i className="far fa-caret-square-up text-dark float-right mr-0" />
+                        <i
+                          className="far fa-caret-square-up text-dark float-right mr-0"
+                          style={{ fontSize: 20 }}
+                        />
                       </th>
                       <td>4,890</td>
                       <td>3,985</td>
