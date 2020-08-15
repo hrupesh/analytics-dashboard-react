@@ -59,6 +59,7 @@ var ps;
 class Sidebar extends React.Component {
   state = {
     collapseOpen: false,
+    dashCollapse: true,
   };
   constructor(props) {
     super(props);
@@ -68,13 +69,19 @@ class Sidebar extends React.Component {
   activeRoute(routeName) {
     return this.props.location.pathname.indexOf(routeName) > -1 ? "active" : "";
   }
-  // toggles collapse between opened and closed (true/false)
+
   toggleCollapse = () => {
     this.setState({
       collapseOpen: !this.state.collapseOpen,
     });
   };
-  // closes the collapse
+
+  toggleDashCollapse = () => {
+    this.setState({
+      dashCollapse: !this.state.dashCollapse,
+    });
+  };
+
   closeCollapse = () => {
     this.setState({
       collapseOpen: false,
@@ -90,7 +97,7 @@ class Sidebar extends React.Component {
               <NavLink
                 to={prop.layout + prop.path}
                 tag={NavLinkRRD}
-                onClick={this.closeCollapse}
+                onClick={this.toggleDashCollapse}
                 activeClassName="active"
                 className="font-weight-600"
               >
@@ -111,24 +118,24 @@ class Sidebar extends React.Component {
                   paddingBottom: 10,
                   marginTop: -15,
                 }}
-                isOpen={true}
+                isOpen={this.state.dashCollapse}
               >
                 <NavLink
                   style={{ paddingBottom: 8, paddingTop: 8 }}
-                  className="text-muted font-weight-500"
+                  className="text-primary font-weight-700"
                 >
                   {" "}
                   Page Vistors{" "}
                 </NavLink>
                 <NavLink
                   style={{ paddingBottom: 8, paddingTop: 8 }}
-                  className="text-muted font-weight-500"
+                  className="text-muted font-weight-600"
                 >
                   Post Performance
                 </NavLink>
                 <NavLink
                   style={{ paddingBottom: 8, paddingTop: 8 }}
-                  className="text-muted font-weight-500"
+                  className="text-muted font-weight-600"
                 >
                   {" "}
                   Team Overall{" "}
