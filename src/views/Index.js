@@ -293,7 +293,7 @@ class Index extends React.Component {
           </Row>
           <Header />
           <Row className="mt-5">
-            <Col className="mb-5 mb-xl-0" xl="7">
+            <Col className="mb-5 mb-xl-0" xl="8">
               <Card className="shadow">
                 <CardHeader className="border-0">
                   <Row className="align-items-center">
@@ -428,7 +428,7 @@ class Index extends React.Component {
                 </Table>
               </Card>
             </Col>
-            <Col xl="5">
+            <Col xl="4">
               <Card className="shadow">
                 <CardHeader className="border-0">
                   <Row className="align-items-center">
