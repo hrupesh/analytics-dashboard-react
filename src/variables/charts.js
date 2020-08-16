@@ -243,13 +243,13 @@ function chartOptions() {
       drawBorder: true,
       drawTicks: true,
       lineWidth: 0.1,
-      zeroLineWidth: 0,
+      zeroLineWidth: 0.1,
       zeroLineColor: mode === "dark" ? colors.gray[200] : colors.gray[100],
-      zeroLineBorderDash: [2],
+      zeroLineBorderDash: [0],
       zeroLineBorderDashOffset: [2],
     },
     ticks: {
-      beginAtZero: true,
+      beginAtZero: false,
       padding: 10,
       callback: function (value) {
         if (!(value % 10)) {
@@ -352,6 +352,7 @@ let chartExample2 = {
     scales: {
       yAxes: [
         {
+          position: "right",
           gridLines: {
             color: colors.gray[900],
             zeroLineColor: colors.gray[900],
@@ -359,9 +360,9 @@ let chartExample2 = {
 
           ticks: {
             callback: function (value) {
-              if (!(value % 10)) {
-                //return '$' + value + 'k'
-                return value;
+              if (!(value % 30)) {
+                return value / 1000 + "k";
+                // return value;
               }
             },
           },
