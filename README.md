@@ -1,3 +1,3 @@
 # Analytics-Dashboard-React
 
-## A Customised Dashboard designed on React
+## A Customised Analytical Dashboard designed on React
