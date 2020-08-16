@@ -265,7 +265,7 @@ class Index extends React.Component {
                 </CardHeader>
                 <CardBody>
                   {/* Chart */}
-                  <div className="chart">
+                  <div className="chart" style={{ height: 200 }}>
                     <Bar
                       data={chartExample2.data}
                       options={chartExample2.options}
