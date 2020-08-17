@@ -45,6 +45,7 @@ class AdminNavbar extends React.Component {
               className="align-items-center d-none d-md-flex float-right"
               navbar
             >
+              
               <select class="arrows">
                 <option value="Vancouver Island University">
                   Vancouver Island University
