@@ -28,7 +28,7 @@ class AdminNavbar extends React.Component {
     return (
       <>
         <Navbar
-          className="navbar navbar-top navbar-dark"
+          className="navbar fixed-top navbar-dark"
           color="white"
           expand="md"
           id="navbar-main"
