@@ -45,16 +45,19 @@ class AdminNavbar extends React.Component {
               className="align-items-center d-none d-md-flex float-right"
               navbar
             >
-              
               <select class="arrows">
                 <option value="Vancouver Island University">
-                  Vancouver Island University
+                  <span>
+                  <img
+                    alt="ENG"
+                    src="https://image.flaticon.com/icons/svg/555/555462.svg"
+                    style={{ height: 20, width: 20 }}
+                  />
+                  ENG
+                  </span>
                 </option>
-                <option value="Western University">Western University</option>
-                <option value="Wilfrid Laurier University">
-                  Wilfrid Laurier University
-                </option>
-                <option value="York University">York University</option>
+                <option value="Western University">HIN</option>
+                <option value="Wilfrid Laurier University">ESP</option>
               </select>
 
               <ReactFlagsSelect
