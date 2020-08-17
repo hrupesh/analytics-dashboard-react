@@ -8,7 +8,8 @@ import {
   Navbar,
   Nav,
   Container,
-  NavbarBrand
+  NavbarBrand,
+  Col,
 } from "reactstrap";
 import "../../assets/css/argon-dashboard-react.css";
 import ReactFlagsSelect from "react-flags-select";
@@ -34,6 +35,9 @@ class AdminNavbar extends React.Component {
           id="navbar-main"
         >
           <Container>
+            <div>
+              <i className="fas fa-home"></i>
+            </div>
             <Link
               className="h2 mb-0 text-dark  d-none d-lg-inline-block"
               to="/"
