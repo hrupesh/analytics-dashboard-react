@@ -21333,16 +21333,23 @@ select {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
+  color: #3e3f42;
+  border: none;
+  background: transparent;
+  border-color: #d8dce6;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(22, 29, 37, .05), inset 0 -70px 30px -50px rgba(22, 29, 37, .03), inset 0 2px 0 0 hsla(0, 0%, 100%, .05);
+  border: 1px solid #d8dce6;
 }
 
 select.arrows {
   background-image: url('../img/sort-solid.svg');
-  background-position: calc(100% - .5rem), 100% 0;
-  background-size: 1.5em 1.5em;
+  background-position: calc(100% - 1rem), 100% 0;
+  background-size: 8px;
   background-repeat: no-repeat;
 }
 
+
 select.arrows:focus {
-  border-color: blue;
   outline: 0;
 }
