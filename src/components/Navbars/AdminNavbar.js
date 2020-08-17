@@ -51,7 +51,7 @@ class AdminNavbar extends React.Component {
             >
               {/* <select class="arrows">
                 <option  data >Option1</option>
-                <option value="Vancouver Island University">
+                <option value="ENG">
                   <img
                     alt="ENG"
                     src="https://image.flaticon.com/icons/svg/555/555462.svg"
@@ -59,8 +59,6 @@ class AdminNavbar extends React.Component {
                   />
                   ENG
                 </option>
-                <option value="Western University">HIN</option>
-                <option value="Wilfrid Laurier University">ESP</option>
               </select> */}
 
               <ReactFlagsSelect
