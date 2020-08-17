@@ -8,7 +8,7 @@ import {
   Navbar,
   Nav,
   Container,
-  NavbarBrand,
+  NavbarBrand
 } from "reactstrap";
 import "../../assets/css/argon-dashboard-react.css";
 import ReactFlagsSelect from "react-flags-select";
@@ -45,20 +45,19 @@ class AdminNavbar extends React.Component {
               className="align-items-center d-none d-md-flex float-right"
               navbar
             >
-              <select class="arrows">
+              {/* <select class="arrows">
+                <option  data >Option1</option>
                 <option value="Vancouver Island University">
-                  <span>
                   <img
                     alt="ENG"
                     src="https://image.flaticon.com/icons/svg/555/555462.svg"
                     style={{ height: 20, width: 20 }}
                   />
                   ENG
-                  </span>
                 </option>
                 <option value="Western University">HIN</option>
                 <option value="Wilfrid Laurier University">ESP</option>
-              </select>
+              </select> */}
 
               <ReactFlagsSelect
                 countries={["GB", "IN", "ES"]}
