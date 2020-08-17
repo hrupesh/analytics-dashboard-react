@@ -13,6 +13,8 @@ import {
 import "../../assets/css/argon-dashboard-react.css";
 import ReactFlagsSelect from "react-flags-select";
 
+import select from "../select";
+
 import "react-flags-select/css/react-flags-select.css";
 
 class AdminNavbar extends React.Component {
@@ -45,25 +47,8 @@ class AdminNavbar extends React.Component {
               className="align-items-center d-none d-md-flex float-right"
               navbar
             >
-              <div class="outer-events-handler dropdown btn-group select">
-                <button
-                  class="btn btn-block dropdown-toggle"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  type="button"
-                  role="button"
-                >
-                  Select Country
-                </button>
-                <div class="dropdown-menu bottom-right">
-                  <button class="btn dropdown-item" type="button" role="button">
-                    Option
-                  </button>
-                </div>
-              </div>
+              <select />
 
-              
               <ReactFlagsSelect
                 countries={["GB", "IN", "ES"]}
                 customLabels={{ GB: "ENG", IN: "HIN", ES: "ESP" }}
