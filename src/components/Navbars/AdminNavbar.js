@@ -45,6 +45,25 @@ class AdminNavbar extends React.Component {
               className="align-items-center d-none d-md-flex float-right"
               navbar
             >
+              <div class="outer-events-handler dropdown btn-group select">
+                <button
+                  class="btn btn-block dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  type="button"
+                  role="button"
+                >
+                  Select Country
+                </button>
+                <div class="dropdown-menu bottom-right">
+                  <button class="btn dropdown-item" type="button" role="button">
+                    Option
+                  </button>
+                </div>
+              </div>
+
+              
               <ReactFlagsSelect
                 countries={["GB", "IN", "ES"]}
                 customLabels={{ GB: "ENG", IN: "HIN", ES: "ESP" }}
