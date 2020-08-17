@@ -180,9 +180,10 @@ class Sidebar extends React.Component {
           </button>
           {/* Brand */}
           {logo ? (
-            <NavbarBrand className="border-bottom-1 py-4" {...navbarBrandProps}>
-              <i className="fas fa-home"></i>
-            </NavbarBrand>
+            // <NavbarBrand className="border-bottom-1 py-4" {...navbarBrandProps}>
+            //   <i className="fas fa-home"></i>
+            // </NavbarBrand>
+            null
           ) : null}
           {/* User */}
           <Nav className="align-items-center d-md-none"></Nav>
