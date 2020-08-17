@@ -197,7 +197,7 @@ class Sidebar extends React.Component {
                     <Col className="collapse-brand" xs="6">
                       {logo.innerLink ? (
                         <Link to={logo.innerLink}>
-                          <i class="fas fa-home"></i>
+                          <i className="fas fa-home"></i>
                         </Link>
                       ) : (
                         <a href={logo.outterLink}>
