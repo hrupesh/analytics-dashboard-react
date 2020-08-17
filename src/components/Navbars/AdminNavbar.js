@@ -41,7 +41,7 @@ class AdminNavbar extends React.Component {
               {this.props.brandText}
             </Link>
 
-            <Nav className="align-items-center d-none d-md-flex " navbar>
+            <Nav className="align-items-center d-none d-md-flex float-right" navbar>
               <ReactFlagsSelect
                 countries={["GB", "IN", "ES"]}
                 customLabels={{ GB: "ENG", IN: "HIN", ES: "ESP" }}
