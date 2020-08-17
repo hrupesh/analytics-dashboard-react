@@ -34,12 +34,12 @@ class AdminNavbar extends React.Component {
           expand="md"
           id="navbar-main"
         >
-          <Container>
-            <div>
+          <Container className="pl-0">
+            <div className="home-icon">
               <i className="fas fa-home"></i>
             </div>
             <Link
-              className="h2 mb-0 text-dark  d-none d-lg-inline-block"
+              className="h2 mb-0 text-dark  d-none d-lg-inline-block dashlink"
               to="/"
             >
               {this.props.brandText}

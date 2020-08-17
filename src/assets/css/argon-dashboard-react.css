@@ -4531,7 +4531,7 @@ input[type="button"].btn-block {
   align-items: center;
   border-bottom: 1px solid #eaedf3;
   justify-content: space-between;
-  padding: 1.1rem 1rem;
+  padding: 1rem 0rem;
 }
 
 .navbar>.container,
@@ -21359,4 +21359,20 @@ select.arrows {
 
 select.arrows:focus {
   outline: 0;
+}
+
+.home-icon {
+  min-width: 250px;
+  max-width: 250px;
+  border-right: 1px solid #eaedf3;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  height: 100%;
+  align-items: center;
+}
+
+.dashlink{
+  margin-left: 290px;
 }
