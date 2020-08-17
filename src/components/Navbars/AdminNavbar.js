@@ -13,7 +13,7 @@ import {
 import "../../assets/css/argon-dashboard-react.css";
 import ReactFlagsSelect from "react-flags-select";
 
-// import "react-flags-select/css/react-flags-select.css";
+import "react-flags-select/css/react-flags-select.css";
 
 class AdminNavbar extends React.Component {
   constructor(props) {
@@ -35,7 +35,7 @@ class AdminNavbar extends React.Component {
         >
           <Container>
             <Link
-              className="h4 mb-0 text-dark  d-none d-lg-inline-block"
+              className="h2 mb-0 text-dark  d-none d-lg-inline-block"
               to="/"
             >
               {this.props.brandText}
