@@ -21407,7 +21407,7 @@ select.arrows:focus {
   background-color: white;
   border: 1px solid #eaedf3;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .12);
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 16px;
   margin: 1rem;
   min-width: 150px;
