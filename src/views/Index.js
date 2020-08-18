@@ -89,35 +89,37 @@ class Index extends React.Component {
             <Col className="mb-5 mb-xl-0" xl="12">
               <Card className="bg-white">
                 <CardHeader className="bg-transparent d-flex justify-content-between">
-                      <h2 className="text-dark mb-0">Daily Visitors</h2>
-                      <Select
-                        className="cstm-select"
-                        options={[
-                          { label: "January", value: 1 },
-                          { label: "February", value: 2 },
-                          { label: "March", value: 3 },
-                          { label: "April", value: 4 },
-                          { label: "May", value: 5 },
-                          { label: "June", value: 6 },
-                          { label: "July", value: 7 },
-                          { label: "August", value: 8 },
-                          { label: "September", value: 9 },
-                          { label: "October", value: 10 },
-                          { label: "November", value: 11 },
-                          { label: "December", value: 12 },
-                        ]}
-                        defaultOption={{ label: "December", value: 12 }}
-                      />
-                      <Select
-                        className="cstm-select"
-                        options={[
-                          { label: "2019", value: 2019 },
-                          { label: "2018", value: 2018 },
-                          { label: "2017", value: 2017 },
-                          { label: "2016", value: 2016 },
-                        ]}
-                        defaultOption={{ label: "2018", value: 2018 }}
-                      />
+                  <h2 className="text-dark mb-0">Daily Visitors</h2>
+                  <div>
+                    <Select
+                      className="cstm-select mr-3"
+                      options={[
+                        { label: "January", value: 1 },
+                        { label: "February", value: 2 },
+                        { label: "March", value: 3 },
+                        { label: "April", value: 4 },
+                        { label: "May", value: 5 },
+                        { label: "June", value: 6 },
+                        { label: "July", value: 7 },
+                        { label: "August", value: 8 },
+                        { label: "September", value: 9 },
+                        { label: "October", value: 10 },
+                        { label: "November", value: 11 },
+                        { label: "December", value: 12 },
+                      ]}
+                      defaultOption={{ label: "December", value: 12 }}
+                    />
+                    <Select
+                      className="cstm-select"
+                      options={[
+                        { label: "2019", value: 2019 },
+                        { label: "2018", value: 2018 },
+                        { label: "2017", value: 2017 },
+                        { label: "2016", value: 2016 },
+                      ]}
+                      defaultOption={{ label: "2018", value: 2018 }}
+                    />
+                  </div>
                 </CardHeader>
                 <CardBody>
                   {/* Chart */}
