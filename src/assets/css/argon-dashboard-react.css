@@ -21383,7 +21383,7 @@ select.arrows:focus {
   min-width: 150px;
   transition: all 0.1s ease-in-out;
 }
-/* 
+
 #chartjs-tooltip-table:after {
   bottom: 75%;
   left: 111px;
@@ -21395,7 +21395,7 @@ select.arrows:focus {
   border-bottom-color: #ffffff;
   border-width: 12px;
   margin-left: -15px;
-  } */
+  }
 
 #chartjs-tooltip-table {
   background-color: white;
