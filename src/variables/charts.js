@@ -262,11 +262,16 @@ function chartOptions() {
                 // console.log(body[0]);
                 // console.log(i);
                 var firstWord = body[0].toString();
+                var lastWord = body[0].toString();
                 firstWord = firstWord.replace(/ .*/, "");
-                console.log(firstWord);
+                lastWord = lastWord.replace(/ .* /, "");
+                lastWord = lastWord.replace(/Visitors/, "");
+                // console.log(firstWord);
+                console.log(lastWord);
                 innerHtml +=
                   "<tr ><td id='chartjs-tooltip-table-body'>" +
                   span +
+                  firstWord +
                   body +
                   "</td></tr>";
               });
