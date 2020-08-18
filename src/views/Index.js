@@ -23,6 +23,9 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
+  FormGroup,
+  Label,
+  Input,
 } from "reactstrap";
 
 // core components
@@ -87,6 +90,14 @@ class Index extends React.Component {
                   <Row className="align-items-center">
                     <div className="col">
                       <h2 className="text-dark mb-0">Daily Visitors</h2>
+                    </div>
+                    <div className="col">
+                      <select value="4" className="">
+                        <option value="1">Option1</option>
+                        <option value="2">Option2</option>
+                        <option value="3">Option3</option>
+                        <option value="4">Option4</option>
+                      </select>
                     </div>
                     <div className="col-2  col-xl-1">
                       <Nav className="justify-content-end" pills>
