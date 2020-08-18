@@ -92,12 +92,23 @@ class Index extends React.Component {
                       <h2 className="text-dark mb-0">Daily Visitors</h2>
                     </div>
                     <div className="col">
-                      <select value="4" className="">
-                        <option value="1">Option1</option>
-                        <option value="2">Option2</option>
-                        <option value="3">Option3</option>
-                        <option value="4">Option4</option>
-                      </select>
+                      <div class="custom-select" style={{ width: 200 }}>
+                        <select>
+                          <option value="0">Select car:</option>
+                          <option value="1">Audi</option>
+                          <option value="2">BMW</option>
+                          <option value="3">Citroen</option>
+                          <option value="4">Ford</option>
+                          <option value="5">Honda</option>
+                          <option value="6">Jaguar</option>
+                          <option value="7">Land Rover</option>
+                          <option value="8">Mercedes</option>
+                          <option value="9">Mini</option>
+                          <option value="10">Nissan</option>
+                          <option value="11">Toyota</option>
+                          <option value="12">Volvo</option>
+                        </select>
+                      </div>
                     </div>
                     <div className="col-2  col-xl-1">
                       <Nav className="justify-content-end" pills>

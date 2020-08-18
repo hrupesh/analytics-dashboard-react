@@ -21334,8 +21334,8 @@ select {
   cursor: pointer;
 }
 
-select:after,
-select:before {
+.select:after,
+.select:before {
   color: inherit;
   opacity: .5;
   display: flex;
