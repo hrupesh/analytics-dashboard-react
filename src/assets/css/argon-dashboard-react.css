@@ -21380,7 +21380,8 @@ select.arrows:focus {
 
 #chartjs-tooltip {
   padding: 1rem !important;
-  min-width: 150px;
+  min-width: 175px;
+  transition: all 0.001s;
 }
 
 #chartjs-tooltip-table {
@@ -21398,7 +21399,7 @@ select.arrows:focus {
   font-size: 12px;
   text-transform: uppercase;
   color: #9ea0a5;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
   display: block;
   padding: 1rem 0 0 1rem
 }
@@ -21409,10 +21410,10 @@ select.arrows:focus {
   display: inline-block;
   width: 6px;
   height: 6px;
-  margin: 2px 12px 0 2px;
+  margin: 2px 8px 0 2px;
 }
 
 #chartjs-tooltip-table-body {
   padding: 0 0.5rem 1rem 1rem;
-  min-width: 150px;
+  min-width: 175px;
 }

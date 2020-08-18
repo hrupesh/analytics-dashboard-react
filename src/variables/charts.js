@@ -253,7 +253,7 @@ function chartOptions() {
                 innerHtml +=
                   "<tr  id='chartjs-tooltip-title' ><th>" +
                   title +
-                  " December </th></tr>";
+                  " December 2019 </th></tr>";
               });
               innerHtml += "</thead><tbody>";
 
@@ -272,7 +272,7 @@ function chartOptions() {
                   "<tr ><td id='chartjs-tooltip-table-body'>" +
                   span +
                   firstWord +
-                  "<b  style='margin-left:1rem;'>" +
+                  "<b  style='margin-left:3rem;'>" +
                   lastWord +
                   "</b></td></tr>";
               });
