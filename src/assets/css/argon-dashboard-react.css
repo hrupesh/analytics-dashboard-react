@@ -21502,6 +21502,12 @@ select.arrows:focus {
   box-shadow: 0 1px 1px 0 rgba(22, 29, 37, .06), inset 0 -150px 30px -50px rgba(22, 29, 37, .05), inset 0 2px 0 0 hsla(0, 0%, 100%, .04);
 }
 
+.cstm-select .dropdown-menu{
+  min-height: 140px;
+  max-height:240px;
+  overflow: auto;
+}
+
 .cstm-select::after {
   transform: translateY(-35px) rotate(270deg);
 }
