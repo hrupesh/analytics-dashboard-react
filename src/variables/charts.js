@@ -215,14 +215,8 @@ function chartOptions() {
             if (!tooltipEl) {
               tooltipEl = document.createElement("div");
               tooltipEl.id = "chartjs-tooltip";
-              tooltipEl.innerHTML = `<table 
-              style='
-              background-color:white;
-              border: 1px solid #eaedf3;
-                box-shadow: 0 2px 8px 0 rgba(0,0,0,.12);
-                border-radius: 3px;
-                padding: 16px' 
-                ></table>`;
+              tooltipEl.innerHTML =
+                "<table style='background-color:white; border: 1px solid #eaedf3; box-shadow: 0 2px 8px 0 rgba(0,0,0,.12);border-radius: 3px;padding: 2rem;' ></table>";
               document.body.appendChild(tooltipEl);
             }
 
