@@ -21514,7 +21514,7 @@ select.arrows:focus {
   padding: 0;
 }
 
-.cstm-select .dropdown-item{
+.cstm-select .dropdown-item {
   border-radius: 0;
   border: none;
   border-bottom: 1px solid #eaedf3;
