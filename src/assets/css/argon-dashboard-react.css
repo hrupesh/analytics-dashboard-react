@@ -21374,6 +21374,23 @@ select.arrows:focus {
   align-items: center;
 }
 
-.dashlink{
+.dashlink {
   margin-left: 290px;
+}
+
+#chartjs-tooltip {
+  background-color: white;
+  border: 1px solid #eaedf3;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .12);
+  border-radius: 3px;
+  padding: 2rem;
+}
+
+#chartjs-tooltip-title {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #9ea0a5;
+  margin-bottom: 14px;
+  display: block;
 }
