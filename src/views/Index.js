@@ -95,187 +95,21 @@ class Index extends React.Component {
                     <div className="col">
                       <h2 className="text-dark mb-0">Daily Visitors</h2>
                     </div>
-                    <div className="col">
+                    <div className="col float-right">
                       <select className="custom-select">
                         <option>January</option>
                         <option>February</option>
                         <option>March</option>
                         <option>April</option>
                       </select>
-
                     </div>
-                    <div className="col-2  col-xl-1">
-                      <Nav className="justify-content-end" pills>
-                        <Dropdown
-                          isOpen={this.state.isOpenedMonth}
-                          toggle={this.toggleMonth}
-                          direction="down"
-                        >
-                          <DropdownToggle caret>
-                            {this.state.selectedMonth}
-                          </DropdownToggle>
-                          <DropdownMenu className="cstm-dropdown-menu">
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "January" })
-                              }
-                            >
-                              January
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "February" })
-                              }
-                            >
-                              February
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "March" })
-                              }
-                            >
-                              {" "}
-                              March{" "}
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "April" })
-                              }
-                            >
-                              {" "}
-                              April{" "}
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "May" })
-                              }
-                            >
-                              {" "}
-                              May{" "}
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "June" })
-                              }
-                            >
-                              {" "}
-                              June{" "}
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "July" })
-                              }
-                            >
-                              {" "}
-                              July{" "}
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "August" })
-                              }
-                            >
-                              {" "}
-                              August{" "}
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "September" })
-                              }
-                            >
-                              {" "}
-                              September{" "}
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "October" })
-                              }
-                            >
-                              {" "}
-                              October{" "}
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "November" })
-                              }
-                            >
-                              {" "}
-                              November{" "}
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedMonth: "December" })
-                              }
-                            >
-                              {" "}
-                              December{" "}
-                            </DropdownItem>
-                          </DropdownMenu>
-                        </Dropdown>
-                      </Nav>
-                    </div>
-                    <div className="col-2 col-xl-1 ml-xl-5 mr-xl-2">
-                      <Nav className="justify-content-end" pills>
-                        <Dropdown
-                          isOpen={this.state.isOpenedYear}
-                          toggle={this.toggleYear}
-                        >
-                          <DropdownToggle caret>
-                            {this.state.selectedYear}
-                          </DropdownToggle>
-                          <DropdownMenu className="cstm-dropdown-menu">
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedYear: 2020 })
-                              }
-                            >
-                              2020
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedYear: 2019 })
-                              }
-                            >
-                              2019
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedYear: 2018 })
-                              }
-                            >
-                              2018
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedYear: 2017 })
-                              }
-                            >
-                              2017
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem
-                              onClick={() =>
-                                this.setState({ selectedYear: 2016 })
-                              }
-                            >
-                              2016
-                            </DropdownItem>
-                          </DropdownMenu>
-                        </Dropdown>
-                      </Nav>
+                    <div className="col float-right">
+                      <select className="custom-select">
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                      </select>
                     </div>
                   </Row>
                 </CardHeader>
