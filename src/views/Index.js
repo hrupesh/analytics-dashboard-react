@@ -89,11 +89,7 @@ class Index extends React.Component {
             <Col className="mb-5 mb-xl-0" xl="12">
               <Card className="bg-white">
                 <CardHeader className="bg-transparent">
-                  <Row className="align-items-center">
-                    <div className="col">
                       <h2 className="text-dark mb-0">Daily Visitors</h2>
-                    </div>
-                    <div className="col ">
                       <Select
                         className="cstm-select"
                         options={[
@@ -112,8 +108,6 @@ class Index extends React.Component {
                         ]}
                         defaultOption={{ label: "January", value: 1 }}
                       />
-                    </div>
-                  </Row>
                 </CardHeader>
                 <CardBody>
                   {/* Chart */}
