@@ -42,6 +42,10 @@ import {
 
 import Header from "components/Headers/Header.js";
 
+import ReactFlagsSelect from "react-flags-select";
+
+import "react-flags-select/css/react-flags-select.css";
+
 class Index extends React.Component {
   constructor(props) {
     super(props);
@@ -92,7 +96,13 @@ class Index extends React.Component {
                       <h2 className="text-dark mb-0">Daily Visitors</h2>
                     </div>
                     <div className="col">
-                      
+                      <select className="custom-select">
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                      </select>
+
                     </div>
                     <div className="col-2  col-xl-1">
                       <Nav className="justify-content-end" pills>

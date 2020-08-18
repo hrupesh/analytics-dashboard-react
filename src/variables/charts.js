@@ -211,95 +211,6 @@ function chartOptions() {
           titleFontWeight: 600,
           titleFontSize: 12,
           caretSize: 4,
-
-          custom: function (tooltipModel) {
-            // Tooltip Element
-            var tooltipEl = document.getElementById("chartjs-tooltip");
-
-            // Create element on first render
-            if (!tooltipEl) {
-              tooltipEl = document.createElement("div");
-              tooltipEl.id = "chartjs-tooltip";
-              tooltipEl.innerHTML =
-                "<table  id='chartjs-tooltip-table'></table>";
-              document.body.appendChild(tooltipEl);
-            }
-
-            // Hide if no tooltip
-            if (tooltipModel.opacity === 0) {
-              tooltipEl.style.opacity = 0;
-              return;
-            }
-
-            // Set caret Position
-            tooltipEl.classList.remove("above", "below", "no-transform");
-            if (tooltipModel.yAlign) {
-              tooltipEl.classList.add(tooltipModel.yAlign);
-            } else {
-              tooltipEl.classList.add("no-transform");
-            }
-
-            function getBody(bodyItem) {
-              return bodyItem.lines;
-            }
-
-            // Set Text
-            if (tooltipModel.body) {
-              var titleLines = tooltipModel.title || [];
-              var bodyLines = tooltipModel.body.map(getBody);
-
-              var innerHtml = "<thead>";
-
-              titleLines.forEach(function (title) {
-                innerHtml +=
-                  "<tr  id='chartjs-tooltip-title' ><th>" +
-                  title +
-                  " December 2019 </th></tr>";
-              });
-              innerHtml += "</thead><tbody>";
-
-              bodyLines.forEach(function (body, i) {
-                var span = '<span id="chartjs-body-span"></span>';
-                // console.log(body[0]);
-                // console.log(i);
-                var firstWord = body[0].toString();
-                var lastWord = body[0].toString();
-                firstWord = firstWord.replace(/ .*/, "");
-                lastWord = lastWord.replace(/ .* /, "");
-                lastWord = lastWord.replace(/Visitors/, "");
-                // console.log(firstWord);
-                // console.log(lastWord);
-                innerHtml +=
-                  "<tr ><td id='chartjs-tooltip-table-body'>" +
-                  span +
-                  firstWord +
-                  "<b  style='margin-left:2rem;'>" +
-                  lastWord +
-                  "</b></td></tr>";
-              });
-              innerHtml += "</tbody>";
-
-              var tableRoot = tooltipEl.querySelector("table");
-              tableRoot.innerHTML = innerHtml;
-            }
-
-            // `this` will be the overall tooltip
-            var position = this._chart.canvas.getBoundingClientRect();
-
-            // Display, position, and set styles for font
-            tooltipEl.style.opacity = 1;
-            tooltipEl.style.position = "absolute";
-            tooltipEl.style.left =
-              position.left + window.pageXOffset + tooltipModel.caretX + "px";
-            tooltipEl.style.top =
-              position.top + window.pageYOffset + tooltipModel.caretY + "px";
-            tooltipEl.style.fontFamily = tooltipModel._bodyFontFamily;
-            tooltipEl.style.fontSize = tooltipModel.bodyFontSize + "px";
-            tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle;
-            tooltipEl.style.padding = "0.5rem";
-            tooltipEl.style.pointerEvents = "none";
-          },
-
           mode: "index",
           intersect: false,
         },
@@ -475,6 +386,92 @@ let chartExample2 = {
           content += yLabel;
           return content;
         },
+      },
+      custom: function (tooltipModel) {
+        // Tooltip Element
+        var tooltipEl = document.getElementById("chartjs-tooltip");
+
+        // Create element on first render
+        if (!tooltipEl) {
+          tooltipEl = document.createElement("div");
+          tooltipEl.id = "chartjs-tooltip";
+          tooltipEl.innerHTML = "<table  id='chartjs-tooltip-table'></table>";
+          document.body.appendChild(tooltipEl);
+        }
+
+        // Hide if no tooltip
+        if (tooltipModel.opacity === 0) {
+          tooltipEl.style.opacity = 0;
+          return;
+        }
+
+        // Set caret Position
+        tooltipEl.classList.remove("above", "below", "no-transform");
+        if (tooltipModel.yAlign) {
+          tooltipEl.classList.add(tooltipModel.yAlign);
+        } else {
+          tooltipEl.classList.add("no-transform");
+        }
+
+        function getBody(bodyItem) {
+          return bodyItem.lines;
+        }
+
+        // Set Text
+        if (tooltipModel.body) {
+          var titleLines = tooltipModel.title || [];
+          var bodyLines = tooltipModel.body.map(getBody);
+
+          var innerHtml = "<thead>";
+
+          titleLines.forEach(function (title) {
+            innerHtml +=
+              "<tr  id='chartjs-tooltip-title' ><th>" +
+              title +
+              " December 2019 </th></tr>";
+          });
+          innerHtml += "</thead><tbody>";
+
+          bodyLines.forEach(function (body, i) {
+            var span = '<span id="chartjs-body-span"></span>';
+            // console.log(body[0]);
+            // console.log(i);
+            var firstWord = body[0].toString();
+            var lastWord = body[0].toString();
+            firstWord = firstWord.replace(/ .*/, "");
+            lastWord = lastWord.replace(/ .* /, "");
+            lastWord = lastWord.replace(/Visitors/, "");
+            // console.log(firstWord);
+            // console.log(lastWord);
+            innerHtml +=
+              "<tr ><td id='chartjs-tooltip-table-body'>" +
+              span +
+              firstWord +
+              "<b  style='margin-left:2rem;'>" +
+              lastWord +
+              "</b></td></tr>";
+          });
+          innerHtml += "</tbody>";
+
+          var tableRoot = tooltipEl.querySelector("table");
+          tableRoot.innerHTML = innerHtml;
+        }
+
+        // `this` will be the overall tooltip
+        var position = this._chart.canvas.getBoundingClientRect();
+
+        // Display, position, and set styles for font
+        tooltipEl.style.opacity = 1;
+        tooltipEl.style.position = "absolute";
+        tooltipEl.style.left =
+          position.left + window.pageXOffset + tooltipModel.caretX + "px";
+        tooltipEl.style.top =
+          position.top + window.pageYOffset + tooltipModel.caretY + "px";
+        tooltipEl.style.fontFamily = tooltipModel._bodyFontFamily;
+        tooltipEl.style.fontSize = tooltipModel.bodyFontSize + "px";
+        tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle;
+        tooltipEl.style.padding = "0.5rem";
+        tooltipEl.style.pointerEvents = "none";
       },
     },
   },
