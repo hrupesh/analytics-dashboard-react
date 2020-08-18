@@ -259,7 +259,11 @@ function chartOptions() {
 
               bodyLines.forEach(function (body, i) {
                 var span = '<span id="chartjs-body-span"></span>';
-                // console.log(body);
+                // console.log(body[0]);
+                // console.log(i);
+                var firstWord = body[0].toString();
+                firstWord = firstWord.replace(/ .*/, "");
+                console.log(firstWord);
                 innerHtml +=
                   "<tr ><td id='chartjs-tooltip-table-body'>" +
                   span +
