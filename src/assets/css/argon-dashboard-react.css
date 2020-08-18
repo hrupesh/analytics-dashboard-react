@@ -21394,3 +21394,15 @@ select.arrows:focus {
   margin-bottom: 14px;
   display: block;
 }
+
+#chartjs-body-span {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  background: #1665D8;
+  border-radius: 3px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 2px;
+}

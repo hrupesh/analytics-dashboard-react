@@ -249,17 +249,18 @@ function chartOptions() {
               var innerHtml = "<thead>";
 
               titleLines.forEach(function (title) {
-                innerHtml += "<tr  id='chartjs-tooltip-title' ><th>" + title + " December </th></tr>";
+                innerHtml +=
+                  "<tr  id='chartjs-tooltip-title' ><th>" +
+                  title +
+                  " December </th></tr>";
               });
               innerHtml += "</thead><tbody>";
 
               bodyLines.forEach(function (body, i) {
-                var colors = tooltipModel.labelColors[i];
-                var style = "background: #fff";
-                style += "; border-color: black";
-                style += "; border-width: 2px";
-                var span = '<span style="' + style + '"></span>';
-                innerHtml += "<tr><td>" + span + body + "</td></tr>";
+                var span = '<span id="chartjs-body-span"></span>';
+                console.log(body);
+                innerHtml +=
+                  "<tr><td>" + span + body + " this is body! </td></tr>";
               });
               innerHtml += "</tbody>";
 
