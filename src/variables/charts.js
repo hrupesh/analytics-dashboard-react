@@ -205,7 +205,11 @@ function chartOptions() {
           },
         },
         tooltips: {
-          enabled: false,
+          enabled: true,
+          // backgroundColor: "#fff",
+          titleFontColor: "#9ea0a5",
+          titleFontWeight: 600,
+          titleFontSize: 12,
 
           custom: function (tooltipModel) {
             // Tooltip Element
@@ -280,6 +284,11 @@ function chartOptions() {
             tooltipEl.style.padding =
               tooltipModel.yPadding + "px " + tooltipModel.xPadding + "px";
             tooltipEl.style.pointerEvents = "none";
+          },
+          callbacks: {
+            label: function (tooltipItem) {
+              return "$" + Number(tooltipItem.yLabel) + " and so worth it !";
+            },
           },
 
           mode: "index",
