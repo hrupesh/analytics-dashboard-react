@@ -267,13 +267,14 @@ function chartOptions() {
                 lastWord = lastWord.replace(/ .* /, "");
                 lastWord = lastWord.replace(/Visitors/, "");
                 // console.log(firstWord);
-                console.log(lastWord);
+                // console.log(lastWord);
                 innerHtml +=
                   "<tr ><td id='chartjs-tooltip-table-body'>" +
                   span +
                   firstWord +
-                  body +
-                  "</td></tr>";
+                  "<b  style='margin-left:1rem;'>" +
+                  lastWord +
+                  "</b></td></tr>";
               });
               innerHtml += "</tbody>";
 

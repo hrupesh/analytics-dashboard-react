@@ -21390,7 +21390,7 @@ select.arrows:focus {
   border-radius: 3px;
   padding: 16px;
   margin: 1rem;
-  min-width: 200px;
+  min-width: 150px;
 }
 
 #chartjs-tooltip-title {
@@ -21414,5 +21414,5 @@ select.arrows:focus {
 
 #chartjs-tooltip-table-body {
   padding: 0 0.5rem 1rem 1rem;
-  min-width: 200px;
+  min-width: 150px;
 }
