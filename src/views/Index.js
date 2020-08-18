@@ -40,11 +40,9 @@ import {
   data4,
 } from "variables/charts.js";
 
+import { Select } from "@duik/it";
+
 import Header from "components/Headers/Header.js";
-
-import ReactFlagsSelect from "react-flags-select";
-
-import "react-flags-select/css/react-flags-select.css";
 
 class Index extends React.Component {
   constructor(props) {
@@ -95,20 +93,38 @@ class Index extends React.Component {
                     <div className="col">
                       <h2 className="text-dark mb-0">Daily Visitors</h2>
                     </div>
-                    <div className="col float-right">
-                      <select className="custom-select">
-                        <option>January</option>
-                        <option>February</option>
-                        <option>March</option>
-                        <option>April</option>
-                      </select>
-                    </div>
-                    <div className="col float-right">
-                      <select className="custom-select">
-                        <option>January</option>
-                        <option>February</option>
-                        <option>March</option>
-                        <option>April</option>
+                    <div className="col ">
+                      <Select
+                        className="cstm-select"
+                        options={[
+                          { label: "January", value: 1 },
+                          { label: "February", value: 2 },
+                          { label: "March", value: 3 },
+                          { label: "April", value: 4 },
+                          { label: "May", value: 5 },
+                          { label: "June", value: 6 },
+                          { label: "July", value: 7 },
+                          { label: "August", value: 8 },
+                          { label: "September", value: 9 },
+                          { label: "October", value: 10 },
+                          { label: "November", value: 11 },
+                          { label: "December", value: 12 },
+                        ]}
+                        defaultOption={{ label: "January", value: 1 }}
+                      />
+                      <select defaultValue="1" className="custom-select">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
                       </select>
                     </div>
                   </Row>
