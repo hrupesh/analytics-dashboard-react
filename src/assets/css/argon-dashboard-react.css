@@ -21469,3 +21469,33 @@ select.arrows:focus {
   border: 1px solid #d8dce6;
   cursor: pointer;
 }
+
+.cstm-select button {
+  background: transparent;
+}
+
+.cstm-select .dropdown-toggle::after {
+  display: none;
+}
+
+.cstm-select .btn {
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  box-shadow: 0 0 transparent;
+  color: #3e3f42;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.cstm-select::after {
+  transform: translateY(-37px) rotate(270deg);
+}
+
+.cstm-select::before {
+  transform: translateY(15px) translateX(1px) rotate(90deg);
+}
+
+.cstm-select button:hover,
+button:focus,
+button:active {
+  box-shadow: 0 0 transparent;
+}
