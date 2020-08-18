@@ -210,6 +210,7 @@ function chartOptions() {
           titleFontColor: "#9ea0a5",
           titleFontWeight: 600,
           titleFontSize: 12,
+          caretSize: 4,
 
           custom: function (tooltipModel) {
             // Tooltip Element
@@ -272,7 +273,7 @@ function chartOptions() {
                   "<tr ><td id='chartjs-tooltip-table-body'>" +
                   span +
                   firstWord +
-                  "<b  style='margin-left:3rem;'>" +
+                  "<b  style='margin-left:2rem;'>" +
                   lastWord +
                   "</b></td></tr>";
               });

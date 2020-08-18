@@ -21380,9 +21380,22 @@ select.arrows:focus {
 
 #chartjs-tooltip {
   padding: 1rem !important;
-  min-width: 175px;
-  transition: all 0.001s;
+  min-width: 150px;
+  transition: all 0.1s ease-in-out;
 }
+/* 
+#chartjs-tooltip-table:after {
+  bottom: 75%;
+  left: 111px;
+  border: solid rgba(0, 0, 0, 0);
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 12px;
+  margin-left: -15px;
+  } */
 
 #chartjs-tooltip-table {
   background-color: white;
@@ -21415,5 +21428,5 @@ select.arrows:focus {
 
 #chartjs-tooltip-table-body {
   padding: 0 0.5rem 1rem 1rem;
-  min-width: 175px;
+  min-width: 150px;
 }
