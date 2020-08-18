@@ -205,7 +205,7 @@ function chartOptions() {
           },
         },
         tooltips: {
-          enabled: true,
+          enabled: false,
           // backgroundColor: "#fff",
           titleFontColor: "#9ea0a5",
           titleFontWeight: 600,
@@ -219,7 +219,8 @@ function chartOptions() {
             if (!tooltipEl) {
               tooltipEl = document.createElement("div");
               tooltipEl.id = "chartjs-tooltip";
-              tooltipEl.innerHTML = "<table ></table>";
+              tooltipEl.innerHTML =
+                "<table  id='chartjs-tooltip-table'></table>";
               document.body.appendChild(tooltipEl);
             }
 
@@ -258,9 +259,12 @@ function chartOptions() {
 
               bodyLines.forEach(function (body, i) {
                 var span = '<span id="chartjs-body-span"></span>';
-                console.log(body);
+                // console.log(body);
                 innerHtml +=
-                  "<tr><td>" + span + body + " this is body! </td></tr>";
+                  "<tr ><td id='chartjs-tooltip-table-body'>" +
+                  span +
+                  body +
+                  "</td></tr>";
               });
               innerHtml += "</tbody>";
 
@@ -281,14 +285,8 @@ function chartOptions() {
             tooltipEl.style.fontFamily = tooltipModel._bodyFontFamily;
             tooltipEl.style.fontSize = tooltipModel.bodyFontSize + "px";
             tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle;
-            tooltipEl.style.padding =
-              tooltipModel.yPadding + "px " + tooltipModel.xPadding + "px";
+            tooltipEl.style.padding = "0.5rem";
             tooltipEl.style.pointerEvents = "none";
-          },
-          callbacks: {
-            label: function (tooltipItem) {
-              return "$" + Number(tooltipItem.yLabel) + " and so worth it !";
-            },
           },
 
           mode: "index",
