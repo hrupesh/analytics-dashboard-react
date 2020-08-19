@@ -16877,7 +16877,7 @@ textarea[resize="horizontal"] {
   .navbar-vertical .navbar-collapse:before {
     content: '';
     display: block;
-    margin: 1rem -1rem;
+    margin: 0.5rem -1rem;
   }
 }
 
@@ -21179,11 +21179,12 @@ button:focus,
 }
 
 .avatarContainer {
-  padding: 30px;
+  padding: 1.5rem;
   padding-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid #eaedf3;
 }
 
 .avatar-img {
