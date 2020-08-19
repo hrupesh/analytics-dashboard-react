@@ -21252,8 +21252,20 @@ button:focus,
 
 .nav-section {
   margin-top: 1.5rem;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
   padding: 0 2rem;
+}
+
+.nav-section-bottom {
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+  padding: 0 2rem;
+}
+
+@media(max-width:1400px){
+  .nav-section-bottom{
+    margin-bottom: 4rem;
+  }
 }
 
 @media (max-width:500px) {

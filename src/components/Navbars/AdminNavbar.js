@@ -48,6 +48,7 @@ class AdminNavbar extends React.Component {
             <Nav
               className="align-items-center d-none d-md-flex float-right"
               navbar
+              style={{ marginRight: 25 }}
             >
               {/* <select class="arrows">
                 <option  data >Option1</option>

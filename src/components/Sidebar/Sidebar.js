@@ -96,7 +96,7 @@ class Sidebar extends React.Component {
                   paddingLeft: 35,
                   paddingRight: 16,
                   paddingBottom: 10,
-                  marginTop: 0
+                  marginTop: 0,
                 }}
                 isOpen={this.state.dashCollapse}
               >
@@ -244,7 +244,7 @@ class Sidebar extends React.Component {
                   <span className="nav-link-right-el">→</span>
                 </a>
                 <a className="nav-link-bottom-sidenav">
-                  <span className="nav-link-text">Invoice #845</span>
+                  <span className="nav-link-text">Invoice #940</span>
                   <span className="nav-link-right-el">→</span>
                 </a>
                 <a className="nav-link-bottom-sidenav">
@@ -252,6 +252,17 @@ class Sidebar extends React.Component {
                     Customer: Minerva Viewer
                   </span>
                   <span className="nav-link-right-el">→</span>
+                </a>
+              </div>
+
+              <div className="nav-section-bottom">
+                <a className="nav-link-bottom-sidenav">
+                  <span className="nav-link-text">
+                    <strong> Page: dribbble.com/janlosert </strong>
+                  </span>
+                </a>
+                <a className="nav-link-bottom-sidenav text-muted">
+                  <span className="nav-link-text">575940-1811</span>
                 </a>
               </div>
             </Collapse>
