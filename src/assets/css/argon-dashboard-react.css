@@ -15469,7 +15469,7 @@ a.btn-icon-only {
 }
 
 .card-stats .card-body {
-  padding: 1rem 1.5rem;
+  padding: 2rem;
 }
 
 .card-stats .card-status-bullet {
@@ -16844,7 +16844,7 @@ textarea[resize="horizontal"] {
 
 .navbar-vertical {
   box-shadow: 0 0 transparent !important;
-  border-right: 0;
+  border-right: 1px solid #eaedf3;
   padding: 0 !important;
 }
 
@@ -21330,6 +21330,7 @@ button:focus,
   font-weight: 500;
   font-size: .875rem;
   line-height: 1.375rem;
+  margin-bottom: 5px;
 }
 
 @media(min-width:1200px) and (max-width:1500px) {
