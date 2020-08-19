@@ -128,6 +128,28 @@ class Sidebar extends React.Component {
           </NavItem>
         );
       }
+      if (prop.name === "Inbox") {
+        return (
+          <NavItem key={key}>
+            <div className="cstm-nav-link">
+              <NavLink
+                to={"#"}
+                tag={NavLinkRRD}
+                onClick={this.closeCollapse}
+                activeClassName="active"
+                style={{ color: "#9ea0a5" }}
+              >
+                <i className={prop.icon} style={{ fontSize: 20 }} />
+                <strong style={{ color: "#3e3f42" }}> {prop.name} </strong>
+                <i
+                  className="fas fa-sort  "
+                  style={{ position: "absolute", right: -25 }}
+                ></i>
+              </NavLink>
+            </div>
+          </NavItem>
+        );
+      }
       return (
         <NavItem key={key}>
           <div className="cstm-nav-link">

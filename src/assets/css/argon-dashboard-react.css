@@ -15469,7 +15469,7 @@ a.btn-icon-only {
 }
 
 .card-stats .card-body {
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
 .card-stats .card-status-bullet {
@@ -18372,7 +18372,8 @@ textarea[resize="horizontal"] {
 }
 
 .table th {
-  font-weight: 600;
+  font-weight: 400;
+  color: #3e3f42;
 }
 
 .table td .progress {
@@ -21232,7 +21233,7 @@ button:focus,
   min-height: 1px;
   height: 100vh;
   overflow-y: auto;
-  margin-top: 4.5rem;
+  margin-top: 4.4rem;
 }
 
 ::-webkit-scrollbar {
@@ -21553,11 +21554,11 @@ select.arrows:focus {
 }
 
 .cstm-select::after {
-  transform: translateY(-35px) rotate(270deg);
+  transform: translateY(-35px)  rotate(270deg);
 }
 
 .cstm-select::before {
-  transform: translateY(13px) rotate(90deg);
+  transform: translateY(13px) translateX(-0.5px) rotate(90deg);
 }
 
 .cstm-select .dropdown-toggle:hover,
