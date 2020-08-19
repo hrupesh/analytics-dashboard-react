@@ -17236,10 +17236,11 @@ textarea[resize="horizontal"] {
     flex-direction: column;
     margin-left: 0rem;
     margin-right: 0rem;
+    margin-top: 1rem;
   }
 
   .navbar-vertical.navbar-expand-md .navbar-nav .nav-link {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
   }
 
   .navbar-vertical.navbar-expand-md .navbar-nav .nav-link.active:before {
@@ -21252,6 +21253,7 @@ button:focus,
 .nav-section {
   margin-top: 1.5rem;
   margin-bottom: 8rem;
+  padding: 0 2rem;
 }
 
 @media (max-width:500px) {
@@ -21541,7 +21543,7 @@ select.arrows:focus {
 }
 
 .cstm-select::before {
-  transform: translateY(13px) translateX(1px) rotate(90deg);
+  transform: translateY(13px) rotate(90deg);
 }
 
 .cstm-select .dropdown-toggle:hover,

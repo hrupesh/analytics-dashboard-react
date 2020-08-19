@@ -96,7 +96,7 @@ class Sidebar extends React.Component {
                   paddingLeft: 35,
                   paddingRight: 16,
                   paddingBottom: 10,
-                  marginTop: -15,
+                  marginTop: 0
                 }}
                 isOpen={this.state.dashCollapse}
               >
