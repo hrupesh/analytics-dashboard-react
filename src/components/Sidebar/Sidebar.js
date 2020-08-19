@@ -84,10 +84,7 @@ class Sidebar extends React.Component {
                 activeClassName="active"
                 className="font-weight-600"
               >
-                <i
-                  className={prop.icon}
-                  style={{ fontSize: 20, marginTop: 5 }}
-                />
+                <i className={prop.icon} style={{ fontSize: 20 }} />
                 {prop.name}
                 <i
                   className="fas fa-caret-down  text-primary"
@@ -141,7 +138,7 @@ class Sidebar extends React.Component {
               activeClassName="active"
               style={{ color: "#9ea0a5" }}
             >
-              <i className={prop.icon} style={{ fontSize: 20, marginTop: 5 }} />
+              <i className={prop.icon} style={{ fontSize: 20 }} />
               <strong style={{ color: "#3e3f42" }}> {prop.name} </strong>
             </NavLink>
           </div>
