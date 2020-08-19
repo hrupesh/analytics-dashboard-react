@@ -15,7 +15,6 @@ import "../../assets/css/argon-dashboard-react.css";
 import ReactFlagsSelect from "react-flags-select";
 
 import "react-flags-select/css/react-flags-select.css";
-import Icon from "@duik/icon";
 
 class AdminNavbar extends React.Component {
   constructor(props) {
@@ -38,7 +37,6 @@ class AdminNavbar extends React.Component {
           <Container className="pl-0">
             <div className="home-icon">
               <i className="fas fa-home"></i>
-              <Icon>building</Icon>
             </div>
             <Link
               className="h2 mb-0 text-dark  d-none d-lg-inline-block dashlink"
