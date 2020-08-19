@@ -67,9 +67,11 @@ section {
   display: block;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 body {
   margin: 0;
-  font-family: Open Sans, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -18360,9 +18362,11 @@ textarea[resize="horizontal"] {
 .table thead th {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  font-size: 0.65rem;
+  color: #9ea0a5;
+  font-size: 0.75rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   border-bottom: 1px solid #e9ecef;
 }
 
