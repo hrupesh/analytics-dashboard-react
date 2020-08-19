@@ -300,7 +300,7 @@ class Index extends React.Component {
                             <Progress
                               max="100"
                               value="80"
-                              barClassName="bg-gradient-primary"
+                              barClassName="bg-primary"
                             />
                           </div>
                         </div>
@@ -315,7 +315,7 @@ class Index extends React.Component {
                             <Progress
                               max="100"
                               value="50"
-                              barClassName="bg-gradient-primary"
+                              barClassName="bg-primary"
                             />
                           </div>
                         </div>
@@ -330,7 +330,7 @@ class Index extends React.Component {
                             <Progress
                               max="100"
                               value="40"
-                              className="bg-gradient-primary"
+                              className="bg-primary"
                             />
                           </div>
                         </div>
@@ -345,7 +345,7 @@ class Index extends React.Component {
                             <Progress
                               max="100"
                               value="5"
-                              barClassName="bg-gradient-primary"
+                              barClassName="bg-primary"
                             />
                           </div>
                         </div>
