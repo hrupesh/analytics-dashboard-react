@@ -258,7 +258,7 @@ class Sidebar extends React.Component {
               <div className="nav-section-bottom">
                 <a className="nav-link-bottom-sidenav">
                   <span className="nav-link-text">
-                    <strong> Page: dribbble.com/janlosert </strong>
+                    <strong>Page: dribbble.com/janlosert</strong>
                   </span>
                 </a>
                 <a className="nav-link-bottom-sidenav text-muted">
