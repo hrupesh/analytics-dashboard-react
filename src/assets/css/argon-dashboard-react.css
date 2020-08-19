@@ -13043,7 +13043,7 @@ button.bg-darker:focus {
 }
 
 .text-primary {
-  color: #5e72e4 !important;
+  color: #1665d8 !important;
 }
 
 a.text-primary:hover,
@@ -17232,8 +17232,8 @@ textarea[resize="horizontal"] {
 
   .navbar-vertical.navbar-expand-md .navbar-nav {
     flex-direction: column;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 
   .navbar-vertical.navbar-expand-md .navbar-nav .nav-link {

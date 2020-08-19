@@ -91,7 +91,7 @@ class Sidebar extends React.Component {
                 {prop.name}
                 <i
                   className="fas fa-caret-down  text-primary"
-                  style={{ position: "absolute", right: 0 }}
+                  style={{ position: "absolute", right: -25 }}
                 ></i>
               </NavLink>
               <Collapse
@@ -114,14 +114,14 @@ class Sidebar extends React.Component {
                 <NavLink
                   to={"#"}
                   style={{ paddingBottom: 8, paddingTop: 8 }}
-                  className="text-muted font-weight-600"
+                  className="text-muted font-weight-500"
                 >
                   Post Performance
                 </NavLink>
                 <NavLink
                   to={"#"}
                   style={{ paddingBottom: 8, paddingTop: 8 }}
-                  className="text-muted font-weight-600"
+                  className="text-muted font-weight-500"
                 >
                   {" "}
                   Team Overall{" "}
@@ -132,17 +132,17 @@ class Sidebar extends React.Component {
         );
       }
       return (
-        <NavItem key={key} style={{ borderColor: "black", borderWidth: 1 }}>
+        <NavItem key={key}>
           <div className="cstm-nav-link">
             <NavLink
               to={"#"}
               tag={NavLinkRRD}
               onClick={this.closeCollapse}
               activeClassName="active"
-              className="font-weight-600"
+              style={{ color: "#9ea0a5" }}
             >
               <i className={prop.icon} style={{ fontSize: 20, marginTop: 5 }} />
-              {prop.name}
+              <strong style={{ color: "#3e3f42" }}> {prop.name} </strong>
             </NavLink>
           </div>
         </NavItem>
@@ -179,12 +179,12 @@ class Sidebar extends React.Component {
             <span className="navbar-toggler-icon" />
           </button>
           {/* Brand */}
-          {logo ? (
-            // <NavbarBrand className="border-bottom-1 py-4" {...navbarBrandProps}>
-            //   <i className="fas fa-home"></i>
-            // </NavbarBrand>
-            null
-          ) : null}
+          {logo
+            ? // <NavbarBrand className="border-bottom-1 py-4" {...navbarBrandProps}>
+              //   <i className="fas fa-home"></i>
+              // </NavbarBrand>
+              null
+            : null}
           {/* User */}
           <Nav className="align-items-center d-md-none"></Nav>
           {/* Collapse */}
