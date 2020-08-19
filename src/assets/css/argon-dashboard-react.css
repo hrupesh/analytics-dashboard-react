@@ -21263,8 +21263,8 @@ button:focus,
   border-top: 1px solid #eaedf3;
 }
 
-@media(max-width:1400px){
-  .nav-section-bottom{
+@media(max-width:1400px) {
+  .nav-section-bottom {
     margin-bottom: 4rem;
   }
 }

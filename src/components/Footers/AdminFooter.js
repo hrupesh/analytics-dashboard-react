@@ -8,7 +8,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="footer">
-        <Row className="align-items-center justify-content-xl-between">
+        {/* <Row className="align-items-center justify-content-xl-between">
           <Col xl="12">
             <div className="copyright text-center text-muted">
               © 2020 | Made with 💝 by
@@ -22,7 +22,7 @@ class Footer extends React.Component {
               </a>
             </div>
           </Col>
-        </Row>
+        </Row> */}
       </footer>
     );
   }
